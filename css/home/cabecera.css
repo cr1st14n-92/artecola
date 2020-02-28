@@ -1,5 +1,49 @@
 
+@import url("../fuentes/fuentes.css");
+
 .cabecera{
-    height: 80vh;
-    background-color: black;
+    position: relative;
+    height: 110vh;
+    background-image: url("../../avatar/imagenes/slide-one.jpg");
+    background-size: 100% auto;
+    padding-top: 80px;    
 }
+.container-flex{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-cabecera{
+    margin: auto;
+  width: 1200px;
+}
+.cabecera nav{
+    color: white;
+  
+}
+.cabecera nav a{
+    margin-left: 20px;
+    color: white;
+    line-height: 50px;
+    font-family: os-semibold;
+}
+#mascara{
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.search_content{
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+}
+
+
+
+

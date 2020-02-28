@@ -1,0 +1,35 @@
+
+
+ @font-face {
+    font-family: "os-bold";
+    src: url("OpenSans-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "os-extrabold";
+    src: url("OpenSans-ExtraBold.ttf");
+  }
+
+  @font-face {
+    font-family: "os-extrabold-italic";
+    src: url("OpenSans-ExtraBoldItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "os-lightitalic";
+    src: url("OpenSans-LightItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "os-regular";
+    src: url("OpenSans-Regular.ttf");
+  }
+  @font-face {
+    font-family: "os-semibold";
+    src: url("OpenSans-Semibold.ttf");
+  }
+
+  @font-face {
+    font-family: "os-semibold-italic";
+    src: url("OpenSans-SemiboldItalic.ttf");
+  }
