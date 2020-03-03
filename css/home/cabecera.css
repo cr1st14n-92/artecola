@@ -26,7 +26,8 @@
     margin-left: 20px;
     color: white;
     line-height: 50px;
-    font-family: os-semibold;
+    font-family: 'Open sans semibold';
+    font-size: 1.6rem;
 }
 #mascara{
     position:absolute;
