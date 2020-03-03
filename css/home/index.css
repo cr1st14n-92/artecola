@@ -1,2 +1,4 @@
-@import url("cabecera.css")
+@import url("../base/variables.css");
+@import url("cabecera.css");
+@import url('wrapper.css');
 
