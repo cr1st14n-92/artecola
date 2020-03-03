@@ -1,0 +1,12 @@
+.products{
+    
+}
+.products__box{
+    width: 80%;
+    height: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto ;
+    background-color: #000;
+}

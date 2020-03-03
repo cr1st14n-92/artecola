@@ -1,7 +1,8 @@
 .wrapper {
+    
     margin: 10rem 0 ;
 }
-
+@import url('./wrap/intro.css');
 .intro {
     /* width: 100vw; */
     text-align: center;
@@ -9,12 +10,13 @@
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
+    margin-bottom:22rem ;
 }
 
 .intro__box {
     width: 100%;
     position: relative;
-    height: 50rem;
+    height: 38rem;
     background-color: #C00D0D;
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +30,7 @@
     font-size: 80px;
     display: inline-block;
     width: 100%;
-    margin: 0 20%;
+    margin: 0 15%;
     margin-top: 6rem;
     /* color: white; */
 }
@@ -40,12 +42,11 @@
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: -20%;
+    bottom: -50%;
     margin-right: auto;
     margin-left: auto;
-    /* padding: 0 rem; */
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 0;
     right: 0;
 }
@@ -57,7 +58,38 @@
 
 .intro__box__row__item {
     width: calc(100%/3);
-    background-color: #3C3C3B;
-    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+    height: 22rem;
     margin: 0 2rem;
+    box-shadow: 10px 10px 10px 3px rgba(0,0,0,0.1);
+}
+
+.intro__box__row__item-content{
+    margin:0 20%;
+    font-size: 3rem;    
+}
+.intro__box__row__item-content span{
+    font-family: 'Open sans semibold';
+}
+.intro__box__row__item-icon{
+    height: 8rem;
+}
+
+.intro__box__row__item-text{
+    margin:0 2%;
+    font-size: 3rem;
+}
+.intro__box__row__item-text span{
+    font-family: 'Open sans semibold';
+}
+.intro__box__row__item-box{
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    display: block;
 }
