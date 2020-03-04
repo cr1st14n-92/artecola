@@ -100,7 +100,7 @@ text-align: center;
     height: 3.5rem;
 }
 .header__flag-plomo{
-    width: 50%;
+    width: 60%;
     background-color:#3C3C3B ;
     margin-bottom: 15px;
     margin-left: auto;
@@ -109,7 +109,7 @@ text-align: center;
 }
 
 .header__flag-red{
-    width: 65%;
+    width: 60%;
     clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
     background-color: #a71b20;
 }

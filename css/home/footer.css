@@ -24,8 +24,10 @@
     width: 100%;
     height: 400px;
     background-image: url("../../avatar/imagenes/twomens.jpg");
-    background-size: 100% 200%;
+    background-size:cover;
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -8rem;
     position: relative;
     display: flex;
     justify-content: center;
