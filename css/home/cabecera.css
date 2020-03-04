@@ -30,7 +30,7 @@
 
 .header__banner-rightrow{
     position: absolute;
-    top: 45%;
+    bottom: 45%;
     right: 8%;
 }
 
@@ -90,17 +90,17 @@ text-align: center;
 }
 
 .header__flags{
-    position: absolute;
-    bottom: 1%;
+
+    margin-top: -25%;
     
-    z-index: 5;
     width: 100%;
 }
 .header__flags div{
-    width: 60%;
+  
     height: 3.5rem;
 }
 .header__flag-plomo{
+    width: 50%;
     background-color:#3C3C3B ;
     margin-bottom: 15px;
     margin-left: auto;
@@ -109,6 +109,7 @@ text-align: center;
 }
 
 .header__flag-red{
+    width: 65%;
     clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
     background-color: #a71b20;
 }
