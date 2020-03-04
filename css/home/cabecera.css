@@ -1,7 +1,9 @@
 
 @import url("../fuentes/fuentes.css");
 
-
+.header{
+    
+}
 .header__menu{
     position: relative;
     width: 85%;
