@@ -1,0 +1,109 @@
+
+.footer__descargas{
+    width: 100%;
+    height: 400px;
+    background-image: url("../../avatar/imagenes/twomens.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__descargas .footer_descargas-capa{
+    background-color: rgba(192, 13, 0, 0.7);
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 8;
+
+}
+.footer_descargas-text {
+    position: relative;
+    z-index: 9;
+    color: white;
+
+    display: flex;
+}
+
+#footer_descargas-p1{
+    font-family: os-regular;
+    font-size: 18px;
+    text-align: end;
+}
+
+#footer_descargas-p2{
+    margin-left: 20px;
+    width: 260px;
+ border: 2px solid white;
+ font-size: 20px;
+  font-family: os-bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Footer contactenos*/
+.footer__contactos{
+    display: flex;
+    background-color:#C00D0D ;
+}
+
+.footer_contactos-iconos{
+    width: 500px;
+    text-align: center;
+    padding-top: 90px;
+  
+}
+
+.footer_contactos-text{
+    padding-top: 28px;
+    color: white;
+}
+
+.footer_contactos-text #footer__part1{
+    display: flex;
+}
+.footer_contactos-text #footer__part1 div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer__part1-title{
+    font-size: 13px;
+    font-family: os-semibold;
+    line-height: 40px;
+}
+.footer__part1-menu{
+    font-family: os-semibold;
+    font-size: 11px;
+    line-height: 13px;    
+}
+#footer__part1-caja2{
+    border-right: 1px solid white;
+    height: 60px;
+}
+
+.text__font{
+    font-family: os-regular;
+    font-size: 11px;
+    line-height: 13px;  
+}
+#footer__mapa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+/*pie de pagina*/
+
+.footer__copyright{
+    text-align: center;
+    font-family:os-lightitalic ;
+    font-size: 20px;
+    line-height: 120px;
+    background-color: #3C3C3B;
+    color: white;
+}
