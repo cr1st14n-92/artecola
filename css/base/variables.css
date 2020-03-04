@@ -39,6 +39,11 @@ html {
     font-family: "Open sans";
 }
 
+span{
+    font-family: 'Open sans lightitalic';
+    font-weight: bold;
+}
+
 .container {
     width: 80%;
     margin-left: auto;
