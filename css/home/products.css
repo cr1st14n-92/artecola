@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 80%;
- 
     margin-left: auto;
     margin-right: auto;
 }
@@ -60,10 +59,12 @@
     background-color: rgba(0, 0, 0, .7);
     margin: 0;
 }
-.products__box__item__description:hover{
+
+.products__box__item__description:hover {
     opacity: 1;
     transition: .2s;
 }
+
 .products__box__item__description p {
     margin: 0 20%;
     line-height: 3.8rem;
@@ -74,17 +75,10 @@
     font-weight: lighter;
 }
 
-.icon_arrow_down {
-    background-color: white;
-    -webkit-mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
-    mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
-    height: 3rem;
-    width: 3rem;
-}
 
 .icon-container {
     height: 3rem;
-    margin-top: 1.5rem ;
+    margin-top: 1.5rem;
     width: 3rem;
     display: flex;
     align-items: center;

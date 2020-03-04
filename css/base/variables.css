@@ -50,10 +50,37 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
-.font_bold{
+.icon_arrow_down {
+    background-color: white;
+    -webkit-mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
+    mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
+    height: 3rem;
+    width: 3rem;
+}
+
+
+.font_bold {
     font-family: 'Open sans semibold';
 }
-.font_italic{
+
+.font_italic {
     font-family: 'Open sans lightitalic';
 }
 
+.btn {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Open sans semibold';
+    color: white;
+    display: block;
+    padding: 1.5rem 3rem;
+    text-align: center;
+}
+
+.btn-red {
+    background-color: #C00D0D;
+}
+
+.btn-grey {
+    background-color: #3C3C3B;
+}
