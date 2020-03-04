@@ -3,12 +3,13 @@
     width: 100%;
     height: 400px;
     background-image: url("../../avatar/imagenes/twomens.jpg");
-    background-size: cover;
+    background-size: 100% 200%;
     background-repeat: no-repeat;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    clip-path: polygon(0 15%, 100% 0,100% 100%, 0 100%);
 }
 
 .footer__descargas .footer_descargas-capa{

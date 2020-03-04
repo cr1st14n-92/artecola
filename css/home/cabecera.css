@@ -20,6 +20,8 @@
 .header__content-banner{
     height: 800px;
     overflow: hidden;
+   
+    
 }
 .header__content-image-1{
     position: relative;
@@ -99,15 +101,19 @@ text-align: center;
     width: 100%;
 }
 .header__flags div{
-    width: 100%;
-    height: 45px;
+    width: 60%;
+    height: 3.5rem;
 }
 .header__flag-plomo{
-    background-color: black;
+    background-color:#3C3C3B ;
     margin-bottom: 15px;
+    margin-left: auto;
+    clip-path: polygon(7% 0 , 100% 0, 100% 100%, 0 100%);
+
 }
 
 .header__flag-red{
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
     background-color: #a71b20;
 }
 
