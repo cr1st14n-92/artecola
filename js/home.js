@@ -5,7 +5,7 @@ function redimensionar(){
     
     let ocultar_capa=document.getElementById("header__content-banner")
 
-    let total =(parseInt(image.clientHeight))*20/100
+    let total =(parseInt(image.clientHeight))*19/100
     
     ocultar_capa.style.height= (parseInt(image.clientHeight)-total)+"px"
 }
