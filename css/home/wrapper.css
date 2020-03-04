@@ -1,11 +1,11 @@
-.wrapper {
+/* .wrapper {
     
     margin: 10rem 0 ;
-}
-@import url('./wrap/intro.css');
+} */
 .intro {
     /* width: 100vw; */
     text-align: center;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -15,7 +15,6 @@
 
 .intro__box {
     width: 100%;
-    position: relative;
     height: 38rem;
     background-color: #C00D0D;
     display: flex;
@@ -41,8 +40,7 @@
     width: 90%;
     display: flex;
     justify-content: center;
-    position: relative;
-    bottom: -50%;
+    /* bottom: -50%; */
     margin-right: auto;
     margin-left: auto;
     position: absolute;

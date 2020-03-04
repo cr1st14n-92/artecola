@@ -1,20 +1,20 @@
-.products{
-}
-.products__box{
+.products__box {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    height: 40rem;
+    /* height: 40rem; */
     margin-left: auto;
     margin-right: auto;
 }
-.products__box__item{
-    width:50% ;
+
+.products__box__item {
+    width: 50%;
     box-sizing: border-box;
-    padding:0 1.5rem;
+    padding: 0 1.5rem;
     padding-bottom: 3rem;
 }
-.products__box__item__content{
+
+.products__box__item__content {
     position: relative;
     background-color: #C00D0D;
     height: 100%;
@@ -23,43 +23,80 @@
     text-align: center;
     align-items: center;
 }
-.products__box__item__content-p{
+
+.products__box__item__content-p {
     font-size: 3rem;
     display: inline-block;
     margin: 0 20%;
     color: #ffffff;
 }
-/* 
-.products__box__item__content-p span{
-    font-family: 'Open sans lightitalic';
-    font-weight: bold;
-} */
 
-.products__box__item img{
-    width: 100%;
-    object-fit: cover;
-    
+.products__box__item__content-p span {
+    font-family: 'Open sans semibold italic';
+    font-weight: lighter;
 }
-.products__box__item__description{
+
+.products__box__item img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.products__box__item__description {
     height: 100%;
+    cursor: pointer;
     position: absolute;
+    opacity: 0;
     top: 0;
     right: 0;
     color: #fff;
     left: 0;
     bottom: 0;
     display: flex;
+    flex-direction: column;
     font-size: 3rem;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0, .7);
+    background-color: rgba(0, 0, 0, .7);
     margin: 0;
 }
-.products__box__item__description p{
-    margin:0 20%;
+.products__box__item__description:hover{
+    opacity: 1;
+    transition: .2s;
 }
-/* .products__box__item__description span{
-    font-family: 'Open sans lightitalic';  
-    font-weight: bold;
-} */
+.products__box__item__description p {
+    margin: 0 20%;
+    line-height: 3.8rem;
+}
+
+.products__box__item__description span {
+    font-family: 'Open sans semibold italic';
+    font-weight: lighter;
+}
+
+.icon_arrow_down {
+    background-color: white;
+    -webkit-mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
+    mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
+    height: 3rem;
+    width: 3rem;
+}
+
+.icon-container {
+    height: 3rem;
+    margin-top: 1.5rem ;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.products__description-icon {
+    height: 1.5rem;
+    margin-top: .5rem;
+    width: 1.5rem;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}

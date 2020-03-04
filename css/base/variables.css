@@ -37,15 +37,23 @@ html {
     font-size: 62.5%;
     /* font family */
     font-family: "Open sans";
+    font-weight: lighter;
 }
 
-span{
+/* span {
     font-family: 'Open sans lightitalic';
-    font-weight: bold;
-}
+    font-weight: bold !important;
+} */
 
 .container {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
+.font_bold{
+    font-family: 'Open sans semibold';
+}
+.font_italic{
+    font-family: 'Open sans lightitalic';
+}
+
