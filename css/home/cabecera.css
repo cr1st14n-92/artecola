@@ -8,12 +8,110 @@
     background-size: 100% auto;
     padding-top: 80px;    
 }
-.container-flex{
+.header__menu{
     position: relative;
-    z-index: 3;
+    width: 1200px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+.header__content-banner{
+    height: 800px;
+    overflow: hidden;
+}
+.header__content-image-1{
+    position: relative;
+}
+.header__banner-leftrow{
+    position: absolute;
+    top:45%;
+    left: 10%;
+}
+
+.header__banner-rightrow{
+    position: absolute;
+    top: 45%;
+    right: 8%;
+}
+
+
+.header__nav a{
+    color: #2E2E2E !important;
+    margin-right: 20px;
+    font-family: os-regular;
+    font-size: 15px;
+}
+
+.header__nav a:hover{
+    color:#a71b20 !important;
+    font-weight: 800;
+}
+.header__search{
+    border-right: 1px solid black;
+}
+.header__icons{
+ display: inline-block;
+ width: 50px;
+text-align: center;
+}
+
+
+
+.header__description-image1{
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    color: white;
+}
+.header__description_title #p1{
+    font-size: 80px;
+    font-family:os-bold;
+}
+
+.header__description_title #p2{
+   font-size: 80px;
+   font-family: os-regular;
+}
+
+.header__description_text{
+   
+    text-align: center;
+}
+
+.header__description_text #p1-text{
+ 
+    font-size: 28px;
+    font-family: os-regular;
+}
+.header__description_text #p2-text{
+ 
+    font-size: 28px;
+    font-family: os-bold;
+}
+
+.header__flags{
+    position: absolute;
+    bottom: 1%;
+    
+    z-index: 5;
+    width: 100%;
+}
+.header__flags div{
+    width: 100%;
+    height: 45px;
+}
+.header__flag-plomo{
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+.header__flag-red{
+    background-color: #a71b20;
+}
+
+
 .menu-cabecera{
     margin: auto;
   width: 1200px;

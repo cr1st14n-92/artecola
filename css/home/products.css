@@ -1,12 +1,21 @@
 .products{
-    
 }
 .products__box{
-    width: 80%;
-    height: 40rem;
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
+    height: 40rem;
+    margin-left: auto;
     margin-right: auto;
-    margin-left: auto ;
-    background-color: #000;
+}
+.products__box__item{
+    width:50% ;
+    box-sizing: border-box;
+    /* height: rem; */
+    /* background-color: tomato; */
+    padding:0 1.5rem;
+    padding-bottom: 3rem;
+}
+.products__box__item-img{
+    width: 100%;
 }
