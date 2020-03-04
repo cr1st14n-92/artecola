@@ -1,9 +1,11 @@
-.wrapper {
+/* .wrapper {
+    
     margin: 10rem 0 ;
-    }
-    .intro {
+} */
+.intro {
     /* width: 100vw; */
     text-align: center;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

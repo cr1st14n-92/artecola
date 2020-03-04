@@ -4,7 +4,7 @@
 
 .header__menu{
     position: relative;
-    width: 1200px;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -12,7 +12,7 @@
     margin-bottom: 30px;
 }
 .header__content-banner{
-    height: 80vh;
+
     overflow: hidden;
 }
 .header__content-image-1{
@@ -35,7 +35,7 @@
     color: #2E2E2E !important;
     margin-right: 20px;
     font-family: os-regular;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .header__nav a:hover{
