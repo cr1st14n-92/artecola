@@ -16,6 +16,7 @@
     flex-wrap: wrap;
     position: relative;
     margin-bottom: 12rem;
+    /* overflow: hidden; */
 }
 
 .intro__box {
@@ -89,7 +90,7 @@
 }
 
 @media only screen and (max-width:1200px) {
-    .intro__box{
+    .intro__box {
         height: 26rem;
     }
     .intro__box__row__item__image {
@@ -109,22 +110,30 @@
         height: 5rem;
     }
 }
-@media only screen and (max-width:768px){
-    .container{
+
+@media only screen and (max-width:768px) {
+    .container {
         width: 100%;
     }
-    .intro__box{
+    .intro__box {
         height: 26rem;
     }
 }
-@media only screen and (max-width:720px){
 
-    .intro__box__row{
+@media only screen and (max-width:720px) {
+    .intro{
+        margin-bottom: 2rem;
+    }
+    .intro__box__row {
         flex-wrap: wrap;
-    }   
-     .intro__box__row__item{
-        margin-right:auto;
-        margin-left: auto;
-        width: 70%;
+        position: relative;
+        margin-top: -15%;
+    }
+    .intro__box__row__item  {
+        margin-right: 27.5%;
+        margin-left: 27.5%;
+        width: 45%;
+        margin-bottom: 1rem;
+        font-size: 3rem;
     }
 }
