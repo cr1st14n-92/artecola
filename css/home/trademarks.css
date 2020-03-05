@@ -1,6 +1,7 @@
 .trademarks {
     margin-bottom: 6rem;
     margin-top: 6rem;
+    overflow: hidden;
 }
 
 .trademarks__title {

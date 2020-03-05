@@ -93,6 +93,7 @@
 }
 
 .footer_contactos-text #footer__part1 {
+    overflow: hidden;
     display: flex;
 }
 
@@ -142,4 +143,7 @@
     line-height: 120px;
     background-color: #3C3C3B;
     color: white;
+}
+footer{
+    overflow: hidden;
 }
