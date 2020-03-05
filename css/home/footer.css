@@ -23,11 +23,11 @@
 .footer__descargas {
     width: 100%;
     height: 400px;
-    background-image: url("../../avatar/imagenes/twomens.jpg");
+    background-image: url("../../avatar/imagenes/workers-red.png");
     background-size:cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: -12rem;
+
     position: relative;
     display: flex;
     justify-content: center;
