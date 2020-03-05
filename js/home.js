@@ -24,8 +24,29 @@ function isElementPartiallyVisible(elto) {
                       (caja.bottom>= 0 && caja.bottom <= alturaViewport);  
     return (cajaDentroH && cajaDentroV);
 }
+let indicador=false
+
+//ANIMACION INTRO
+function animacion_intro(position){
+
+    if(position>250){
+       let intro_element= document.getElementById("intro__box__row");
+       if(indicador==false){
+          
+           intro_element.style.marginTop="-10px"
+           indicador=true;
+       }else{
+           indicador=false;
+        intro_element.style.marginTop="15px"
+       }
+         
+    }
+}
 
 window.addEventListener('scroll', function () {
+
+    //console.log( window.scrollY)
+    animacion_intro(window.scrollY)
     var isVisible;
     postsBox.forEach(function (element, index) {
         if (isElementPartiallyVisible(element)) {
@@ -37,12 +58,17 @@ window.addEventListener('scroll', function () {
 
 })
 
+
+
+
+
+
 function redimensionar() {
     let image = document.getElementById("header__banner-image1")
 
     let ocultar_capa = document.getElementById("header__content-banner")
 
-    let total = (parseInt(image.clientHeight)) * 19 / 100
+    let total = (parseInt(image.clientHeight)) * 26 / 100
 
     ocultar_capa.style.height = (parseInt(image.clientHeight) - total) + "px"
 }

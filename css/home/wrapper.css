@@ -10,16 +10,17 @@
 
 .intro {
     text-align: center;
-    margin-top: -5%;
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
     margin-bottom: 12rem;
-    overflow: hidden;
+  
 }
 
 .intro__box {
+    margin-top: -6%;
     width: 100%;
     height: 38rem;
     background-color: #C00D0D;
@@ -51,6 +52,7 @@
     top: 65%;
     left: 0;
     right: 0;
+    transition: all 0.9s ease;
 }
 
 .intro__box__column {
