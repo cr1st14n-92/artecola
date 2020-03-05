@@ -52,6 +52,7 @@
 
 .posts__box__container-img{
      width: 80%;
+     z-index: 2;
      margin-right: auto;
      margin-left: auto;
 }
@@ -66,7 +67,6 @@
     position: absolute;
     left: 7%;
     bottom: 65%;
-    z-index: -1;
 }
 .grey_box{
     width: 40%;
@@ -76,5 +76,4 @@
     right: 7%;
     top: 65%;
     
-    z-index: -1;
 }
