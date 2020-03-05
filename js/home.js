@@ -13,19 +13,25 @@ function isTotallyVisible(elto) {
         caja.right <= xViewport);
 
 }
+function isElementPartiallyVisible(elto) {
+    var anchoViewport = window.innerWidth || document.documentElement.clientWidth;
+    var alturaViewport = window.innerHeight || document.documentElement.clientHeight;
+    //Posición de la caja del elemento
+    var caja = elto.getBoundingClientRect();
+    var cajaDentroH = (caja.left >= 0 && caja.left <= anchoViewport) ||
+                      (caja.right >= 0 && caja.right <= anchoViewport);
+    var cajaDentroV = (caja.top >= 0 && caja.top <= alturaViewport) ||  
+                      (caja.bottom>= 0 && caja.bottom <= alturaViewport);  
+    return (cajaDentroH && cajaDentroV);
+}
 
 window.addEventListener('scroll', function () {
     var isVisible;
     postsBox.forEach(function (element, index) {
-        if (isTotallyVisible(element)) {
-           postTexts[index].classList.add('animated','fadeInUp');
-           postsBtn[index].classList.add('animated','fadeInUp');
-           postTitles[index].classList.add('animated','fadeInDown');
-        //    console.log(postsBox);
-        }else{
-            postTexts[index].classList.remove('animated','fadeInUp');
-           postsBtn[index].classList.remove('animated','fadeInUp');
-           postTitles[index].classList.remove('animated','fadeInDown');
+        if (isElementPartiallyVisible(element)) {
+           postTexts[index].classList.add('animated','fadeInUpBig');
+           postsBtn[index].classList.add('animated','fadeInUpBig');
+           postTitles[index].classList.add('animated','fadeInDownBig');
         }
     });
 
