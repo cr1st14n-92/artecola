@@ -3,10 +3,10 @@ const postTexts = document.querySelectorAll('.posts__box__container-text');
 const postTitles = document.querySelectorAll('.posts__box__container-title');
 const postsBox = document.querySelectorAll('.posts__box__container-img');
 var animation = 'fadeInUpBig';
-const xScreen = window.innerWidth || document.documentElement.clientWidth
+var xScreen = window.innerWidth || document.documentElement.clientWidth
 console.log(window.innerWidth);
 const element = document.querySelector('.right');
-if (xScreen < 425) {
+if (xScreen <= 425) {
     animation = 'fadeInLeft';
     element.classList.remove('right')
 

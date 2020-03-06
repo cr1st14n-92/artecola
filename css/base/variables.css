@@ -79,6 +79,7 @@ html {
     color: white;
     display: block;
     padding: 1.5rem 3rem;
+    max-width: 60%;
     text-align: center;
 }
 
@@ -89,17 +90,21 @@ html {
 .btn-grey {
     background-color: #3C3C3B;
 }
-
+@media only screen and (max-width:1024px) {
+    .btn{
+        font-size: 2rem;
+    }
+}
 @media only screen and (max-width:860px) {
     .btn {
-        font-size: 2rem;
-        padding: 1rem 2.5rem;
+        max-width:70%;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
     }
 }
 
-@media only screen and (max-width:426px) {
-    .btn {
-        font-size: 1.5rem;
-        padding: 1rem 1.4rem;
+@media only screen and (max-width:599px){
+    .btn{
+        font-size: 1.3rem;
     }
 }

@@ -1,6 +1,6 @@
 .trademarks {
-    margin-bottom: 6rem;
-    margin-top: 6rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
     overflow: hidden;
 }
 
@@ -18,10 +18,22 @@
 }
 
 .trademarks__row__item{
-    margin: 0 1rem;
+    margin: 0 2%;
     /* height: 8rem; */
     height: 8rem;
     min-height: 8rem;
     max-height: 10rem;
     width: 20%;
+}
+
+@media only screen and (max-width:769px){
+    .trademarks__row{
+        justify-content: space-around;
+    }
+    .trademarks__row__item{
+        width: 40%;
+        min-height: 2rem ;
+        height: 7rem;
+        margin-bottom: 3rem;
+    }   
 }
