@@ -2,7 +2,18 @@ const postsBtn = document.querySelectorAll('.posts__box__container-btn');
 const postTexts = document.querySelectorAll('.posts__box__container-text');
 const postTitles = document.querySelectorAll('.posts__box__container-title');
 const postsBox = document.querySelectorAll('.posts__box__container-img');
+var animation = 'fadeInUpBig';
+const xScreen = window.innerWidth || document.documentElement.clientWidth
+console.log(window.innerWidth);
+const element = document.querySelector('.right');
+if (xScreen < 425) {
+    animation = 'fadeInLeft';
+    element.classList.remove('right')
 
+} else {
+    element.classList.add('right')
+
+}
 function isTotallyVisible(elto) {
     var xViewport = window.innerWidth || document.documentElement.clientWidth;
     var yViewport = window.innerHeight || document - documentElement.clientHeight;
@@ -49,33 +60,29 @@ function animacion_intro(position) {
             }
         }
         else
-        if (screenWidth >= 340) {
-            if (isElementPartiallyVisible(intro_element)) {
-                intro_element.style.marginTop = "-110px"
-            } else {
-                intro_element.style.marginTop = "-100px"
-            }
-        }else
-            if (isElementPartiallyVisible(intro_element)) {
-                intro_element.style.marginTop = "-190px"
-            } else {
-                intro_element.style.marginTop = "-180px"
-            }
-} 
-   
+            if (screenWidth >= 340) {
+                if (isElementPartiallyVisible(intro_element)) {
+                    intro_element.style.marginTop = "-110px"
+                } else {
+                    intro_element.style.marginTop = "-100px"
+                }
+            } else
+                if (isElementPartiallyVisible(intro_element)) {
+                    intro_element.style.marginTop = "-190px"
+                } else {
+                    intro_element.style.marginTop = "-180px"
+                }
+}
+///Manipulacion de clases en posts
+
 
 
 window.addEventListener('scroll', function () {
-
-
-
-    //console.log( window.scrollY)
     animacion_intro(window.scrollY)
-    var isVisible;
     postsBox.forEach(function (element, index) {
         if (isElementPartiallyVisible(element)) {
-            postTexts[index].classList.add('animated', 'fadeInUpBig');
-            postsBtn[index].classList.add('animated', 'fadeInUpBig');
+            postTexts[index].classList.add('animated', animation);
+            postsBtn[index].classList.add('animated', animation);
             postTitles[index].classList.add('animated', 'fadeInDownBig');
         }
     });
