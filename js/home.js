@@ -31,39 +31,39 @@ let indicador = false
 function animacion_intro(position) {
     var screenWidth = window.innerWidth || document.documentElement.clientWidth;
     let intro_element = document.getElementById("intro__box__row");
-    if (screenWidth >= 1024) {
+    if (screenWidth >= 860) {
 
         if (isTotallyVisible(intro_element)) {
 
             intro_element.style.marginTop = "-10px"
         } else {
-            intro_element.style.marginTop = "30px"
+            intro_element.style.marginTop = "10px"
         }
 
     } else
-        if (screenWidth >= 860 ) {
+        if (screenWidth >= 600) {
             if (isElementPartiallyVisible(intro_element)) {
-                intro_element.style.marginTop = "-100px"
+                intro_element.style.marginTop = "-150px"
             } else {
-                intro_element.style.marginTop = "-60px"
+                intro_element.style.marginTop = "-140px"
             }
         }
         else
-            if (screenWidth >= 720) {
-                if (isElementPartiallyVisible(intro_element)) {
-                    intro_element.style.marginTop = "-150px"
-                } else {
-                    intro_element.style.marginTop = "-130px"
-                }
-            } 
-            else
-                    if (isElementPartiallyVisible(intro_element)) {
-                        intro_element.style.marginTop = "-100px"
-                    } else {
-                        intro_element.style.marginTop = "-60px"
-                    }
+        if (screenWidth >= 340) {
+            if (isElementPartiallyVisible(intro_element)) {
+                intro_element.style.marginTop = "-110px"
+            } else {
+                intro_element.style.marginTop = "-100px"
+            }
+        }else
+            if (isElementPartiallyVisible(intro_element)) {
+                intro_element.style.marginTop = "-190px"
+            } else {
+                intro_element.style.marginTop = "-180px"
+            }
+} 
    
-}
+
 
 window.addEventListener('scroll', function () {
 
@@ -83,6 +83,18 @@ window.addEventListener('scroll', function () {
 })
 
 
+function menu_responsive() {
+    let btn_close = document.getElementById("header__nav-close")
+    let btn_menu = document.getElementById("header__btn-menu");
+    let responsive = document.getElementById("header__menu-responsive")
+    btn_menu.addEventListener("click", () => {
+        responsive.style.right = "0px";
+    })
+
+    btn_close.addEventListener("click", () => {
+        responsive.style.right = "-100%";
+    })
+}
 
 
 
@@ -114,6 +126,7 @@ document.addEventListener("DOMContentLoaded", f, false);
 
 function init() {
     redimensionar();
+    menu_responsive();
 }
 
 

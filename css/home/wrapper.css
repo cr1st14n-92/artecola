@@ -3,8 +3,10 @@
     background-size: cover;
     z-index: 0;
     background-position: center; */
-    /* background-attachment: fixed;
+
+/* background-attachment: fixed;
     background-repeat: no-repeat; */
+
 /* } */
 
 .intro {
@@ -97,14 +99,14 @@
     .intro__box {
         height: 20rem;
         width: 100vw;
-        margin-left:0;
+        margin-left: 0;
         margin-right: 0;
     }
     .intro__box__row__item__image {
         width: 80%;
     }
     .intro__box__title {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-right: 10%;
         margin-left: 10%;
     }
@@ -123,9 +125,9 @@
         width: 100%;
     }
     .intro__box {
-        height: 30rem;
+        height: 28rem;
     }
-    .intro{
+    .intro {
         margin-bottom: 2rem;
     }
     .intro__box__row {
@@ -135,7 +137,7 @@
         margin-left: auto;
         margin-top: -15rem;
     }
-    .intro__box__row__item  {
+    .intro__box__row__item {
         margin-right: 27.5%;
         margin-left: 27.5%;
         width: 45%;
@@ -144,21 +146,31 @@
         font-size: 3rem;
     }
 }
-@media only screen and (max-width:720px) {
-    .intro__box{
-        height: 35rem!important;
+
+@media only screen and (max-width:600px) {
+    .intro__box {
+        height: 22rem!important;
         max-height: 35rem!important;
     }
-    .intro__box__row{
-        margin-top: -18rem;
+    .intro__box__title {
+        font-size: 2.8rem!important;
     }
-} 
-@media only screen and (max-width:426px) {
-    .intro__box{
-        height: 35rem!important;
+    .intro__box__row {
+        margin-top: -11rem;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .intro__box {
+        height: 25rem!important;
         max-height: 35rem!important;
     }
-    .intro__box__row{
-        margin-top: -10rem;
+    .intro__box__title {
+        font-size: 2.5rem;
     }
-} 
+}
+@media only screen and (max-width:340px) {
+    .intro__box__row {
+        margin-top: -20rem;
+    }
+}
