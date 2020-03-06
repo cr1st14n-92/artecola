@@ -59,6 +59,18 @@ window.addEventListener('scroll', function () {
 })
 
 
+function menu_responsive(){
+    let btn_close=document.getElementById("header__nav-close")
+    let btn_menu=document.getElementById("header__btn-menu");
+    let responsive= document.getElementById("header__menu-responsive")
+    btn_menu.addEventListener("click",()=>{
+        responsive.style.right="0px";
+    })
+
+    btn_close.addEventListener("click",()=>{
+        responsive.style.right="-100%";
+    })
+}
 
 
 
@@ -90,6 +102,7 @@ document.addEventListener("DOMContentLoaded", f, false);
 
 function init() {
     redimensionar();
+    menu_responsive();
 }
 
 
