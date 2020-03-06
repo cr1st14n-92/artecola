@@ -17,6 +17,7 @@
 .products__box__item__content {
     position: relative;
     background-color: #C00D0D;
+    background-size: cover;
     height: 100%;
     width: 100%;
     display: flex;
@@ -38,7 +39,8 @@
 
 .products__box__item img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    box-sizing: content-box;
 }
 
 .products__box__item__description {
@@ -76,7 +78,6 @@
     font-weight: lighter;
 }
 
-
 .icon-container {
     height: 3rem;
     margin-top: 1.5rem;
@@ -94,4 +95,56 @@
     width: 1.5rem;
     border-radius: 100%;
     background-color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width:930px) {
+    .products__box__item__content-p, .products__box__item__description p {
+        font-size: 2.5rem;
+        line-height: 2.7rem!important;
+    }
+}
+
+
+@media only screen and (max-width:635px) {
+    .products__box {
+        width: 70%;
+    }
+    .products__box__item {
+        width: 100%;
+        min-height: 22rem;
+        max-height: 25rem;
+        margin-bottom: 3rem;
+        padding: 0;
+        overflow-y: hidden;
+    }
+    .products__box {
+        overflow-y: hidden;
+    }
+    .products__box__item {
+        min-height: 22rem;
+        /* max-height: 25rem; */
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .products__box {
+        overflow-y: hidden;
+    }
+    .products__box__item {
+        min-height: 18rem;
+        max-height: 18rem;
+    }
+}
+@media only screen and (max-width:380px) {
+    .products__box {
+        overflow-y: hidden;
+    }
+    .products__box__item__content-p, .products__box__item__description p {
+        font-size: 1.5rem;
+        line-height: 1.7rem!important;
+    }
+    .products__box__item {
+        min-height: 15rem;
+        max-height: 15rem;
+    }
 }
