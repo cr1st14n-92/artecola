@@ -1,13 +1,11 @@
-/* .background {
+.background {
     background-image: url('../../avatar/imagenes/fondo_Mesa\ de\ trabajo\ 1\ copia.png');
     background-size: cover;
     z-index: 0;
-    background-position: center; */
-
-/* background-attachment: fixed;
-    background-repeat: no-repeat; */
-
-/* } */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
 .intro {
     text-align: center;
@@ -125,10 +123,22 @@
         width: 100%;
     }
     .intro__box {
-        height: 28rem;
+        height: 31rem;
     }
     .intro {
         margin-bottom: 2rem;
+        margin-bottom: 14rem;
+    }
+    .intro__box__row {
+        margin-top: -1rem;
+        /* margin-bottom: 100rem; */
+    }
+   
+}
+
+@media only screen and (max-width:716px) {
+    .intro {
+        margin-bottom: 0;
     }
     .intro__box__row {
         flex-wrap: wrap;
@@ -138,7 +148,7 @@
         margin-top: -15rem;
     }
     .intro__box__row__item {
-        margin-right:27.5%; 
+        margin-right: 27.5%;
         margin-left: 27.5%;
         width: 45%;
         min-width: 23rem;
@@ -169,6 +179,7 @@
         font-size: 2.5rem;
     }
 }
+
 @media only screen and (max-width:380px) {
     .intro__box__row {
         margin-top: -20rem;

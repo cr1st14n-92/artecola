@@ -44,13 +44,13 @@ let indicador = false
 function animacion_intro(position) {
     var screenWidth = window.innerWidth || document.documentElement.clientWidth;
     let intro_element = document.getElementById("intro__box__row");
-    if (screenWidth >= 860) {
+    if (screenWidth >= 716) {
 
         if (isTotallyVisible(intro_element)) {
 
-            intro_element.style.marginTop = "-10px"
+            intro_element.style.marginTop = "-15px"
         } else {
-            intro_element.style.marginTop = "10px"
+            intro_element.style.marginTop = "15px"
         }
 
     } else
