@@ -98,6 +98,21 @@ let f = function () {
 
 document.addEventListener("DOMContentLoaded", f, false);
 
+//mediaquery en js 
+
+/*function myFunction(x) {
+    if (x.matches) { // If media query matches
+        let responsive= document.getElementById("header__menu-responsive");
+        responsive.style.height= window.innerHeight+"px"
+    } 
+  }
+  
+  var x = window.matchMedia("(max-width: 700px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) */  
+
+
+
 
 
 function init() {
