@@ -56,9 +56,9 @@ function animacion_intro(position) {
     } else
         if (screenWidth >= 600) {
             if (isElementPartiallyVisible(intro_element)) {
-                intro_element.style.marginTop = "-150px"
+                intro_element.style.marginTop = "-80px"
             } else {
-                intro_element.style.marginTop = "-140px"
+                intro_element.style.marginTop = "-60px"
             }
         }
         else

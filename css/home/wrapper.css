@@ -123,11 +123,10 @@
         width: 100%;
     }
     .intro__box {
-        height: 31rem;
+        height: 20rem;
     }
     .intro {
-        margin-bottom: 2rem;
-        margin-bottom: 14rem;
+        margin-bottom: 15rem;
     }
     .intro__box__row {
         margin-top: -1rem;
@@ -136,7 +135,7 @@
    
 }
 
-@media only screen and (max-width:716px) {
+@media only screen and (max-width:715px) {
     .intro {
         margin-bottom: 0;
     }
