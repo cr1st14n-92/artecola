@@ -116,8 +116,17 @@ function redimensionar() {
     let total = (parseInt(image.clientHeight)) * 26 / 100; 
 
     if(total<200){
-        document.getElementById("header__banner-image1").style.height=image.clientHeight
-        return;
+        document.getElementById("header__banner-image1").style.height="700px"
+        document.getElementById("header__banner-image1").style.width="auto";
+        document.getElementById("header__banner-image1").style.marginLeft="-350px"
+    }
+
+    if(document.body.clientWidth>768){
+        document.getElementById("header__banner-image1").style.height="auto";
+        document.getElementById("header__banner-image1").style.width="100%";
+        document.getElementById("header__banner-image1").style.marginLeft="0px"
+        
+
     }
 
        
