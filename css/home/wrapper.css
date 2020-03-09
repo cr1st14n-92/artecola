@@ -182,7 +182,7 @@
 
 @media only screen and (max-width:380px) {
     .intro__box__row {
-        margin-top: -20rem;
+        margin-top: -12rem;
     }
     .intro__box__row__item {
         min-height: 12rem;

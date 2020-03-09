@@ -70,9 +70,9 @@ function animacion_intro(position) {
                 }
             } else
                 if (isElementPartiallyVisible(intro_element)) {
-                    intro_element.style.marginTop = "-190px"
+                    intro_element.style.marginTop = "-120px"
                 } else {
-                    intro_element.style.marginTop = "-180px"
+                    intro_element.style.marginTop = "-100px"
                 }
 }
 ///Manipulacion de clases en posts
