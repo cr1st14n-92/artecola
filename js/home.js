@@ -6,13 +6,15 @@ var animation = 'fadeInUpBig';
 var xScreen = window.innerWidth || document.documentElement.clientWidth
 console.log(window.innerWidth);
 const element = document.querySelector('.right');
-if (xScreen <= 425) {
-    animation = 'fadeInLeft';
-    element.classList.remove('right')
-
-} else {
-    element.classList.add('right')
-
+if(element) {
+    if (xScreen <= 425) {
+        animation = 'fadeInLeft';
+        element.classList.remove('right')
+    
+    } else {
+        console.log(element);
+        element.classList.add('right')
+    }
 }
 function isTotallyVisible(elto) {
     var xViewport = window.innerWidth || document.documentElement.clientWidth;
@@ -133,7 +135,7 @@ document.addEventListener("DOMContentLoaded", f, false);
 
 function init() {
     redimensionar();
-    menu_responsive();
+    // menu_responsive();
 }
 
 

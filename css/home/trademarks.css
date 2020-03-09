@@ -1,5 +1,5 @@
 .trademarks {
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     margin-top: 3rem;
     overflow: hidden;
 }
@@ -25,6 +25,7 @@
     max-height: 10rem;
     width: 20%;
 }
+
 
 @media only screen and (max-width:769px){
     .trademarks__row{

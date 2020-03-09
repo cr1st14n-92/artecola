@@ -138,7 +138,7 @@
         margin-top: -15rem;
     }
     .intro__box__row__item {
-        margin-right: 27.5%;
+        margin-right:27.5%; 
         margin-left: 27.5%;
         width: 45%;
         min-width: 23rem;
@@ -169,8 +169,18 @@
         font-size: 2.5rem;
     }
 }
-@media only screen and (max-width:340px) {
+@media only screen and (max-width:380px) {
     .intro__box__row {
         margin-top: -20rem;
+    }
+    .intro__box__row__item {
+        min-height: 12rem;
+        margin-right: 10%;
+        margin-left: 10%;
+        width: 80%;
+        height: 18rem!important;
+        /* min-width: 23rem; */
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
     }
 }

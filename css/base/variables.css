@@ -38,6 +38,7 @@ html {
     /* font family */
     font-family: "Open sans";
     font-weight: lighter;
+    /* background-color: tomato; */
 }
 
 /* span {
@@ -58,12 +59,15 @@ html {
     height: 3rem;
     width: 3rem;
 }
-.row_reverse{
+
+.row_reverse {
     flex-direction: row-reverse;
 }
-.column_reverse{
+
+.column_reverse {
     flex-direction: column-reverse;
 }
+
 .font_bold {
     font-family: 'Open sans semibold';
 }
@@ -90,21 +94,39 @@ html {
 .btn-grey {
     background-color: #3C3C3B;
 }
+
+.t4 {
+    font-size: 1.6rem;
+    color: white;
+    text-transform: uppercase;
+    font-family:"Open sans semibold" ;
+    display: inline-block;
+    margin-bottom: 1.8rem;
+}
+.t5{
+    font-size: 1.4rem;
+    color: white;
+    font-family: "Open sans semibold";
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
 @media only screen and (max-width:1024px) {
-    .btn{
+    .btn {
         font-size: 2rem;
     }
 }
+
 @media only screen and (max-width:860px) {
     .btn {
-        max-width:70%;
+        max-width: 70%;
         font-size: 1.5rem;
         padding: 1rem 2rem;
     }
 }
 
-@media only screen and (max-width:599px){
-    .btn{
+@media only screen and (max-width:599px) {
+    .btn {
         font-size: 1.3rem;
     }
 }

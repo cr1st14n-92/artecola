@@ -2,7 +2,7 @@
 @import url("../fuentes/fuentes.css");
 
 .header{
-    
+    overflow-x: hidden;
 }
 .header__menu-responsive{
     position:fixed;
