@@ -6,11 +6,11 @@ var animation = 'fadeInUpBig';
 var xScreen = window.innerWidth || document.documentElement.clientWidth
 console.log(window.innerWidth);
 const element = document.querySelector('.right');
-if(element) {
+if (element) {
     if (xScreen <= 425) {
         animation = 'fadeInLeft';
         element.classList.remove('right')
-    
+
     } else {
         console.log(element);
         element.classList.add('right')
@@ -44,36 +44,46 @@ let indicador = false
 function animacion_intro(position) {
     var screenWidth = window.innerWidth || document.documentElement.clientWidth;
     let intro_element = document.getElementById("intro__box__row");
+    var init, final;
     if (screenWidth >= 716) {
+        init = -15;
+        final = init + 20;
 
         if (isTotallyVisible(intro_element)) {
-
-            intro_element.style.marginTop = "-15px"
+            intro_element.style.marginTop = init + 'px'
         } else {
-            intro_element.style.marginTop = "15px"
+            intro_element.style.marginTop = final + 'px'
         }
 
     } else
         if (screenWidth >= 600) {
+            init = -80;
+            final = init + 20;
             if (isElementPartiallyVisible(intro_element)) {
-                intro_element.style.marginTop = "-80px"
+                intro_element.style.marginTop = init + 'px'
             } else {
-                intro_element.style.marginTop = "-60px"
+                intro_element.style.marginTop = final + 'px'
             }
         }
         else
             if (screenWidth >= 340) {
+                init = -110;
+                final = init + 20;
                 if (isElementPartiallyVisible(intro_element)) {
-                    intro_element.style.marginTop = "-110px"
+                    intro_element.style.marginTop = init + 'px'
                 } else {
-                    intro_element.style.marginTop = "-100px"
+                    intro_element.style.marginTop = final + 'px'
                 }
-            } else
+            } else {
+                init = -110;
+                final = init + 20;
+
                 if (isElementPartiallyVisible(intro_element)) {
-                    intro_element.style.marginTop = "-120px"
+                    intro_element.style.marginTop = init + 'px'
                 } else {
-                    intro_element.style.marginTop = "-100px"
+                    intro_element.style.marginTop = final + 'px'
                 }
+            }
 }
 ///Manipulacion de clases en posts
 
