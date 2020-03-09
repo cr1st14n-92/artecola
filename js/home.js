@@ -88,6 +88,17 @@ function animacion_intro(position) {
                 }
             }
 }
+
+
+// Animacion menu responsivo
+
+function menu_animado(position){
+
+}
+
+
+
+
 ///Manipulacion de clases en posts
 
 
@@ -125,7 +136,7 @@ function menu_responsive() {
 
 
 function redimensionar() {
-    let image = document.getElementById("header__banner-image1")
+    /*let image = document.getElementById("header__banner-image1")
 
     let ocultar_capa = document.getElementById("header__content-banner")
 
@@ -153,7 +164,7 @@ function redimensionar() {
        
 
     
-
+*/
     
 }
 

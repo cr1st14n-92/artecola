@@ -9,6 +9,11 @@
 .header{
     overflow-x: hidden;
 }
+.header__menu{
+    
+ 
+  
+}
 .header__menu-responsive{
     position:fixed;
     top: 0;
@@ -50,6 +55,12 @@
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+header{
+    background-color: white;
+    position:sticky;
+    top:0;
+    z-index: 50;
 }
 .header__content-banner{
 
