@@ -1,24 +1,30 @@
 
 @import url("../fuentes/fuentes.css");
 
+/*iconos*/
+#banner-logo{
+    width: 250px;
+}
+
 .header{
     overflow-x: hidden;
 }
 .header__menu-responsive{
     position:fixed;
     top: 0;
-    right: -100%;
+    right: -130%;
+    bottom: 0;
     background-color: white;
     height: 100vh;
     z-index: 20;
     padding-left: 38px;
     padding-right: 38px;
-
     transition: all 0.5s ease;
+     -webkit-backface-visibility: hidden;
 }
 #nav_header-close{
-    padding-top: 30px;
-    padding-bottom: 35px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 .header__menu-responsive nav div{
   display: flex;
@@ -31,9 +37,9 @@
 
 .header__menu-responsive nav div{
     font-family: os-regular;
-    font-size: 17px;
-    line-height: 90px;
-  width: 260px;
+    font-size: 14px;
+    line-height: 60px;
+  width: 190px;
     border-bottom: 1.2px solid #999999;
 }
 .header__menu{
@@ -160,12 +166,12 @@ text-align: center;
    
 }
 .header__search-input{
-    width: 214px;
+    width: 150px;
 }
 
 .header__search-input input{
     display: block;
-    width: 214px;
+    width: 140px;
     height: 28px;
 }
 
@@ -220,6 +226,13 @@ text-align: center;
      
         font-size: 18px;
       
+    }
+    .header__content-banner{
+        height: 600px;
+    }
+
+    #banner-logo{
+        width: 115px;
     }
     
   }

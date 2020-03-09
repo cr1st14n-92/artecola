@@ -117,7 +117,7 @@ function menu_responsive() {
     })
 
     btn_close.addEventListener("click", () => {
-        responsive.style.right = "-100%";
+        responsive.style.right = "-130%";
     })
 }
 
@@ -129,9 +129,32 @@ function redimensionar() {
 
     let ocultar_capa = document.getElementById("header__content-banner")
 
-    let total = (parseInt(image.clientHeight)) * 26 / 100
+    let total = (parseInt(image.clientHeight)) * 26 / 100; 
 
-    ocultar_capa.style.height = (parseInt(image.clientHeight) - total) + "px"
+    if(total<200){
+        document.getElementById("header__banner-image1").style.height="700px"
+        document.getElementById("header__banner-image1").style.width="auto";
+        document.getElementById("header__banner-image1").style.marginLeft="-450px"
+        
+    }
+
+    if(document.body.clientWidth>768){
+        document.getElementById("header__banner-image1").style.height="auto";
+        document.getElementById("header__banner-image1").style.width="100%";
+        document.getElementById("header__banner-image1").style.marginLeft="0px"
+        
+        
+
+    }
+
+
+       
+        ocultar_capa.style.height = (parseInt(image.clientHeight) - total) + "px"
+       
+
+    
+
+    
 }
 
 
@@ -147,11 +170,25 @@ let f = function () {
 
 document.addEventListener("DOMContentLoaded", f, false);
 
+//mediaquery en js 
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        let responsive= document.getElementById("header__menu-responsive");
+        responsive.style.height= window.innerHeight+"px"
+    } 
+  }
+  
+  var x = window.matchMedia("(max-width: 700px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) 
+
+
+
 
 
 function init() {
     redimensionar();
-    // menu_responsive();
+    menu_responsive();
 }
 
 
