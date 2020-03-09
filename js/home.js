@@ -2,7 +2,10 @@ const postsBtn = document.querySelectorAll('.posts__box__container-btn');
 const postTexts = document.querySelectorAll('.posts__box__container-text');
 const postTitles = document.querySelectorAll('.posts__box__container-title');
 const postsBox = document.querySelectorAll('.posts__box__container-img');
-var animation = 'fadeInUpBig';
+const footerDescargas = document.querySelector('.footer_descargas-text');
+const postsImage=document.querySelector('.posts__box__container');
+
+var animation = 'fadeInLeft';
 var xScreen = window.innerWidth || document.documentElement.clientWidth
 console.log(window.innerWidth);
 const element = document.querySelector('.right');
@@ -92,10 +95,13 @@ function animacion_intro(position) {
 window.addEventListener('scroll', function () {
     animacion_intro(window.scrollY)
     postsBox.forEach(function (element, index) {
-        if (isElementPartiallyVisible(element)) {
+        if (isTotallyVisible(element)) {
             postTexts[index].classList.add('animated', animation);
             postsBtn[index].classList.add('animated', animation);
             postTitles[index].classList.add('animated', 'fadeInDownBig');
+        }
+        if(isTotallyVisible(footerDescargas)){
+            footerDescargas.classList.add('animated','zoomInUp')
         }
     });
 
