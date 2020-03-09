@@ -2,6 +2,20 @@ const postsBtn = document.querySelectorAll('.posts__box__container-btn');
 const postTexts = document.querySelectorAll('.posts__box__container-text');
 const postTitles = document.querySelectorAll('.posts__box__container-title');
 const postsBox = document.querySelectorAll('.posts__box__container-img');
+var animation = 'fadeInUpBig';
+var xScreen = window.innerWidth || document.documentElement.clientWidth
+console.log(window.innerWidth);
+const element = document.querySelector('.right');
+if(element) {
+    if (xScreen <= 425) {
+        animation = 'fadeInLeft';
+        element.classList.remove('right')
+    
+    } else {
+        console.log(element);
+        element.classList.add('right')
+    }
+}
 function isTotallyVisible(elto) {
     var xViewport = window.innerWidth || document.documentElement.clientWidth;
     var yViewport = window.innerHeight || document - documentElement.clientHeight;
@@ -19,56 +33,75 @@ function isElementPartiallyVisible(elto) {
     //Posición de la caja del elemento
     var caja = elto.getBoundingClientRect();
     var cajaDentroH = (caja.left >= 0 && caja.left <= anchoViewport) ||
-                      (caja.right >= 0 && caja.right <= anchoViewport);
-    var cajaDentroV = (caja.top >= 0 && caja.top <= alturaViewport) ||  
-                      (caja.bottom>= 0 && caja.bottom <= alturaViewport);  
+        (caja.right >= 0 && caja.right <= anchoViewport);
+    var cajaDentroV = (caja.top >= 0 && caja.top <= alturaViewport) ||
+        (caja.bottom >= 0 && caja.bottom <= alturaViewport);
     return (cajaDentroH && cajaDentroV);
 }
-let indicador=false
+let indicador = false
 
 //ANIMACION INTRO
-function animacion_intro(position){
+function animacion_intro(position) {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+    let intro_element = document.getElementById("intro__box__row");
+    if (screenWidth >= 860) {
 
-    if(position>250){
-       let intro_element= document.getElementById("intro__box__row");
-       if(indicador==false){
-          
-           intro_element.style.marginTop="-10px"
-           indicador=true;
-       }else{
-           indicador=false;
-        intro_element.style.marginTop="15px"
-       }
-         
-    }
+        if (isTotallyVisible(intro_element)) {
+
+            intro_element.style.marginTop = "-10px"
+        } else {
+            intro_element.style.marginTop = "10px"
+        }
+
+    } else
+        if (screenWidth >= 600) {
+            if (isElementPartiallyVisible(intro_element)) {
+                intro_element.style.marginTop = "-150px"
+            } else {
+                intro_element.style.marginTop = "-140px"
+            }
+        }
+        else
+            if (screenWidth >= 340) {
+                if (isElementPartiallyVisible(intro_element)) {
+                    intro_element.style.marginTop = "-110px"
+                } else {
+                    intro_element.style.marginTop = "-100px"
+                }
+            } else
+                if (isElementPartiallyVisible(intro_element)) {
+                    intro_element.style.marginTop = "-190px"
+                } else {
+                    intro_element.style.marginTop = "-180px"
+                }
 }
+///Manipulacion de clases en posts
+
+
 
 window.addEventListener('scroll', function () {
-
-    //console.log( window.scrollY)
     animacion_intro(window.scrollY)
-    var isVisible;
     postsBox.forEach(function (element, index) {
         if (isElementPartiallyVisible(element)) {
-           postTexts[index].classList.add('animated','fadeInUpBig');
-           postsBtn[index].classList.add('animated','fadeInUpBig');
-           postTitles[index].classList.add('animated','fadeInDownBig');
+            postTexts[index].classList.add('animated', animation);
+            postsBtn[index].classList.add('animated', animation);
+            postTitles[index].classList.add('animated', 'fadeInDownBig');
         }
     });
 
 })
 
 
-function menu_responsive(){
-    let btn_close=document.getElementById("header__nav-close")
-    let btn_menu=document.getElementById("header__btn-menu");
-    let responsive= document.getElementById("header__menu-responsive")
-    btn_menu.addEventListener("click",()=>{
-        responsive.style.right="0px";
+function menu_responsive() {
+    let btn_close = document.getElementById("header__nav-close")
+    let btn_menu = document.getElementById("header__btn-menu");
+    let responsive = document.getElementById("header__menu-responsive")
+    btn_menu.addEventListener("click", () => {
+        responsive.style.right = "0px";
     })
 
-    btn_close.addEventListener("click",()=>{
-        responsive.style.right="-100%";
+    btn_close.addEventListener("click", () => {
+        responsive.style.right = "-100%";
     })
 }
 
@@ -80,9 +113,20 @@ function redimensionar() {
 
     let ocultar_capa = document.getElementById("header__content-banner")
 
-    let total = (parseInt(image.clientHeight)) * 26 / 100
+    let total = (parseInt(image.clientHeight)) * 26 / 100; 
 
-    ocultar_capa.style.height = (parseInt(image.clientHeight) - total) + "px"
+    if(total<200){
+        document.getElementById("header__banner-image1").style.height=image.clientHeight
+        return;
+    }
+
+       
+        ocultar_capa.style.height = (parseInt(image.clientHeight) - total) + "px"
+       
+
+    
+
+    
 }
 
 
@@ -99,8 +143,7 @@ let f = function () {
 document.addEventListener("DOMContentLoaded", f, false);
 
 //mediaquery en js 
-
-/*function myFunction(x) {
+function myFunction(x) {
     if (x.matches) { // If media query matches
         let responsive= document.getElementById("header__menu-responsive");
         responsive.style.height= window.innerHeight+"px"
@@ -109,7 +152,7 @@ document.addEventListener("DOMContentLoaded", f, false);
   
   var x = window.matchMedia("(max-width: 700px)")
   myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) */  
+  x.addListener(myFunction) 
 
 
 

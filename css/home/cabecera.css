@@ -1,8 +1,13 @@
 
 @import url("../fuentes/fuentes.css");
 
+/*iconos*/
+#banner-logo{
+    width: 250px;
+}
+
 .header{
-    
+    overflow-x: hidden;
 }
 .header__menu-responsive{
     position:fixed;
@@ -222,6 +227,13 @@ text-align: center;
      
         font-size: 18px;
       
+    }
+    .header__content-banner{
+        height: 600px;
+    }
+
+    #banner-logo{
+        width: 115px;
     }
     
   }

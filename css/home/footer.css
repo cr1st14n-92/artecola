@@ -9,22 +9,25 @@
 .red_line {
     width: 30%;
     margin-left: auto;
-    height: .4rem;
+    height: .2rem;
     background-color: #C00D0D;
 }
 
 .grey_line {
     width: 30%;
     margin-right: auto;
-    height: .4rem;
+    height: .2rem;
     background-color: #3C3C3B;
 }
 
 .footer__descargas {
+    overflow-x: hidden;
+    margin-top: 4rem;
     width: 100%;
     height: 400px;
+    min-height: 400px;
     background-image: url("../../avatar/imagenes/workers-red.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -12rem;
@@ -35,7 +38,7 @@
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 
-.footer__descargas .footer_descargas-capa {
+/* .footer__descargas .footer_descargas-capa {
     background-color: rgba(192, 13, 0, 0.7);
     position: absolute;
     top: 0;
@@ -43,38 +46,178 @@
     right: 0;
     bottom: 0;
     z-index: 8;
-}
+}  */
 
 .footer_descargas-text {
-    position: relative;
-    z-index: 9;
-    color: white;
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* position: relative;
+    z-index: 9;
+    */
+    color: white;
 }
 
 #footer_descargas-p1 {
     font-family: os-regular;
     font-size: 18px;
     text-align: end;
+    width: 50%;
 }
 
 #footer_descargas-p2 {
+    width: 50%;
+}
+
+.btn_download {
+    width: 45%;
+    padding: 1rem 2rem;
     margin-left: 20px;
-    width: 260px;
     border: 2px solid white;
-    font-size: 20px;
+    font-size: 1.6rem;
     font-family: os-bold;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* display: inline-block; */
 }
 
-/* Footer contactenos*/
+.cloud {
+    margin-left: 1rem;
+    max-height: 3rem;
+    height: 2rem;
+}
+
+@media only screen and (min-width:1440px) {
+    .line__container {
+        -ms-transform: skewY(15deg);
+        transform: skewY(-1.5deg);
+    }
+    #footer_descargas-p1 {
+        font-size: 2.4rem;
+    }
+    .btn_download {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .line__container {
+        -ms-transform: skewY(18deg);
+        transform: skewY(-1.8deg);
+    }
+}
+@media only screen and (max-width:1200px) {
+    .footer__descargas {
+        background-position-y: 100%;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .line__container {
+        -ms-transform: skewY(40deg);
+        transform: skewY(-4deg);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .line__container {
+        -ms-transform: skewY(42deg);
+        transform: skewY(-4.2deg);
+    }
+    #footer_descargas-p1 {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    #footer_descargas-p2 {
+        width: 100%;
+    }
+    .btn_download {
+        font-size: 1.8rem;
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .line__container {
+        -ms-transform: skewY(70deg);
+        transform: skewY(-7deg);
+    }
+    #footer_descargas-p1 {
+        font-size: 1.5rem;
+    }
+    .btn_download {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .line__container {
+        -ms-transform: skewY(88deg);
+        transform: skewY(-8.8deg);
+    }
+}
+
+
+/* FOOTER CONTACTENOS */
+
+footer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C00D0D;
+    display: flex;
+    padding: 5rem 0;
+}
+
+.footer__container__logo{
+    width:40%;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    margin-left:2rem;
+    display: flex;
+    justify-content: end;
+
+    align-items: center;
+}
+.footer__container-logo{
+    margin-left: auto;
+    height: 6rem;
+    margin-right: auto;
+}
+.footer__container__details{
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.footer__container__details__contactUs{
+    width: 50%;
+}
+.footer__container__details__contactUs__box{
+    display: flex;
+}
+.footer__container__details__contactUs__box__item{
+    width: 50%;
+}
+.footer__container__details__contactUs__box__item-description{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: white;
+}
+/*
+Footer contactenos
 
 .footer__contactos {
     display: flex;
     background-color: #C00D0D;
     padding-top: 30px;
+    overflow-x: hidden;
     padding-bottom: 30px;
 }
 
@@ -134,7 +277,7 @@
     padding-bottom: 20px;
 }
 
-/*pie de pagina*/
+pie de pagina
 
 .footer__copyright {
     text-align: center;
@@ -146,4 +289,4 @@
 }
 footer{
     overflow: hidden;
-}
+} */
