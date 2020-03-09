@@ -111,7 +111,7 @@ function menu_responsive() {
     })
 
     btn_close.addEventListener("click", () => {
-        responsive.style.right = "-100%";
+        responsive.style.right = "-130%";
     })
 }
 
@@ -128,7 +128,8 @@ function redimensionar() {
     if(total<200){
         document.getElementById("header__banner-image1").style.height="700px"
         document.getElementById("header__banner-image1").style.width="auto";
-        document.getElementById("header__banner-image1").style.marginLeft="-350px"
+        document.getElementById("header__banner-image1").style.marginLeft="-450px"
+        
     }
 
     if(document.body.clientWidth>768){
@@ -136,8 +137,10 @@ function redimensionar() {
         document.getElementById("header__banner-image1").style.width="100%";
         document.getElementById("header__banner-image1").style.marginLeft="0px"
         
+        
 
     }
+
 
        
         ocultar_capa.style.height = (parseInt(image.clientHeight) - total) + "px"
