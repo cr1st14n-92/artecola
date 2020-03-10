@@ -104,17 +104,20 @@
         width: 80%;
     }
     .intro__box__title {
-        font-size: 4rem;
+        font-size: 3.5rem;
         margin-right: 10%;
         margin-left: 10%;
     }
     .intro__box__row__item-content {
         font-size: 2rem;
-        margin: 0 8%;
+        margin: 0 20%;
         line-height: 2.2rem;
     }
     .intro__box__row__item-icon {
         height: 5rem;
+    }
+    .intro__box__row__item-box{
+        width: 8rem;
     }
 }
 
@@ -125,12 +128,18 @@
     .intro__box {
         height: 20rem;
     }
+   
     .intro {
         margin-bottom: 15rem;
     }
     .intro__box__row {
         margin-top: -1rem;
         /* margin-bottom: 100rem; */
+    }
+    .intro__box__row__item-content {
+        font-size: 1.6rem;
+        margin: 0 20%;
+        line-height: 2.2rem;
     }
    
 }
