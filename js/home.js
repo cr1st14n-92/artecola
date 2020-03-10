@@ -137,15 +137,37 @@ function slider(){
     let content_slide=document.getElementById("content-slide");
     let btn_left= document.getElementById("btn-left");
     let btn_right= document.getElementById("btn-right");
+    let titles= document.getElementsByClassName("slide-title");
+    let aux_img=[true,false,false];
+    let imagenes_banner= document.getElementsByClassName("img-banner");
 
 
-  
+    setInterval(() => {
+        btn_right.click();
+    }, 2900);
 
 
     btn_right.addEventListener("click",()=>{
         content_slide.style.transition="all .5s ease"
         content_slide.style.marginLeft="-200%";
+        titles[0].style.lineHeight="3";
+        titles[0].style.color="rgba(0,0,0,0.0)";
+        titles[0].style.transition="all .5s ease";
 
+        for(let i=0;i<imagenes_banner.length;i++){
+            imagenes_banner[i].src="./avatar/icons/bola-vacia.svg";
+            
+               if(aux_img[i]==true){
+                   aux_img[i]=false
+                i++;
+                if(i==3){
+                    i=0;
+                }           
+                imagenes_banner[i].src="./avatar/icons/bola-llena.svg";                 
+                    aux_img[i]=true 
+               }
+           }
+        
         setTimeout(()=>{
             content_slide.style.transition="none"
             content_slide.style.marginLeft="-99.98%";
@@ -153,6 +175,13 @@ function slider(){
       let clon= first_child.cloneNode(true);
         content_slide.appendChild(clon);
         content_slide.removeChild(first_child);
+
+       titles[0].style.transition="all .5s ease";
+       titles[0].style.lineHeight="1";
+       titles[0].style.color="white";
+       
+       
+
         },500)
     })
 
@@ -161,6 +190,19 @@ function slider(){
     btn_left.addEventListener("click",()=>{
         content_slide.style.transition="all .5s ease"
         content_slide.style.marginLeft="0%";
+
+        for(let i=imagenes_banner.length-1;i>=0;i--){
+            imagenes_banner[i].src="./avatar/icons/bola-vacia.svg";
+               if(aux_img[i]==true){
+                   aux_img[i]=false
+                i--;
+                if(i==-1){
+                    i=2;
+                }           
+                imagenes_banner[i].src="./avatar/icons/bola-llena.svg";                 
+                    aux_img[i]=true 
+               }
+           }
 
         setTimeout(()=>{
             content_slide.style.transition="none"

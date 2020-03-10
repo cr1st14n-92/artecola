@@ -20,6 +20,8 @@
 }
 .content-slide .avatar{
     width: 33.3%;
+    position: relative;
+    
 }
 
 .arrows-slides{
@@ -28,8 +30,43 @@
     justify-content:space-between;
     position: absolute;
     top: 45%;
-    
+}
 
+.text-image{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+}
+
+.slide-title{
+    font-size: 75px;
+    color: white;
+    font-family: os-bold;
+}
+.slide-points{
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+}
+.slide-points div{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;   
+}
+
+
+
+.slide-text{
+    font-size: 20px;
+    color: white;
+    font-family: os-regular;
+    line-height: 25px;
+}
+.slide-text2{
+    font-size: 20px;
+    color: white;
+    font-family: os-semibold;
+    line-height: 25px;
 }
 
 
