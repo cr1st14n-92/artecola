@@ -1,6 +1,38 @@
 
 @import url("../fuentes/fuentes.css");
 
+
+/*only slider*/
+
+.main-slide{
+ width: 100%;
+ overflow: hidden;
+ position: relative;
+
+}
+
+.content-slide{
+    width: 300%;
+    position: relative;
+    display: flex;
+    transition:all 0.5s ease;
+    margin-left: -99.98%;
+}
+.content-slide .avatar{
+    width: 33.3%;
+}
+
+.arrows-slides{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    position: absolute;
+    top: 45%;
+    
+
+}
+
+
 /*iconos*/
 #banner-logo{
     width: 250px;
