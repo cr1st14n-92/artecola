@@ -58,9 +58,6 @@
 }
 
 @media only screen and (min-width:1440px) {
-    /* .footer__descargas{
-        padding-top: 5rem;
-    } */
     #footer_descargas-p1 {
         font-size: 2.4rem;
     }
