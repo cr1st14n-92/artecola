@@ -26,7 +26,7 @@
     width: 100%;
     height: 400px;
     min-height: 400px;
-    background-image: url("../../avatar/imagenes/workers-red.png");
+    background-image: url("../../avatar/imagenes/home/workers-red.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -222,7 +222,7 @@ footer {
     margin-top: 4rem;
     width: 90%;
     margin-right: auto;
-    height: 40rem;
+    height: 25rem;
 }
 
 .footer__mapa iframe {

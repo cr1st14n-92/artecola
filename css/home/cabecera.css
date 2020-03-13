@@ -314,6 +314,28 @@ text-align: center;
     #banner-logo{
         width: 115px;
     }
+
+    /*responsive para el tamaño de letra de los slides*/
+    .slide-title{
+        font-size: 25px;
+       
+    }
+    .slide-text{
+        font-size: 14px;
+  
+        line-height: 15px;
+    }
+    .slide-text2{
+        font-size: 14px;
+       
+        line-height: 15px;
+    }
+    .arrows-slides{
+        display: none;
+    }
+    .img-banner{
+        width: 18px;
+    }
     
   }
 
