@@ -112,7 +112,12 @@
     <div class="main-slide">
         <div id="content-slide" class="content-slide">
             <div class="avatar">
-                <img width="100%" src="./avatar/imagenes/home/aliados-desktop.jpg" alt="">
+                <picture>
+                    <source srcset="./avatar/imagenes/home/aliados_mobile.jpg" media="(max-width: 768px)">
+                    <source srcset="./avatar/imagenes/home/aliados-desktop.jpg">
+                        <img width="100%" src="./avatar/imagenes/home/aliados-desktop.jpg" alt="">
+                  </picture>
+            
                 <div class="text-image">
                     <span class="slide-title">Artecola</span><br>
                     <span class="slide-text">Bienvenidos!<br>
@@ -122,12 +127,21 @@
                 </div>
             </div>
             <div class="avatar">
-                <img width="100%" src="./avatar/imagenes/home/microscopio-desktop.jpg" alt="">
+                <picture>
+                <source srcset="./avatar/imagenes/home/microscopio_mobile.jpg" media="(max-width: 768px)">
+                    <source srcset="./avatar/imagenes/home/microscopio-desktop.jpg">
+                        <img width="100%" src="./avatar/imagenes/home/microscopio-desktop.jpg" alt="">
+                  </picture>
+            
             </div>
             <div class="avatar">
-                <img width="100%" src="./avatar/imagenes/home/telas-desktop.png" alt="">
+                <picture>
+                    <source srcset="./avatar/imagenes/home/telas_mobile.png" media="(max-width: 768px)">
+                        <source srcset="./avatar/imagenes/home/telas-desktop.png">
+                            <img width="100%" src="./avatar/imagenes/home/telas-desktop.png" alt="">
+                      </picture>
+                
             </div>
-
         </div>
 
         <div class="arrows-slides">
