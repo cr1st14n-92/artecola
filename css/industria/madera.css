@@ -1,0 +1,57 @@
+.madera_main-section{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+.madera_mueble-imagen{
+    width: 550px;
+}
+.madera_main-section article{
+    text-align: center;
+}
+
+.madera_main-section article p{
+    font-size: 13px;
+    font-size: os-regular;
+     line-height: 19px;     
+}
+
+.madera_main-section article{
+    border: 1.5px solid #C00D0D;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 380px;
+    width: 550px;
+    margin-right: 100px;
+}
+.madera_main-section article h2{
+    font-family: os-bold;
+    font-size: 19px;
+    line-height: 60px;
+    
+    display: inline-block;
+    background-color: white;
+    width: 120px;
+    margin-top: -50px;
+
+    color: #C00D0D;
+
+}
+.main_madera{
+    padding-top: 46px;
+    padding-bottom: 80px;
+}
+
+
+.font-italic{
+    font-family: os-lightitalic;
+}
+
+.content-subtitles div{
+
+    background-color: #C4C4C4;
+
+}
+
+
+
