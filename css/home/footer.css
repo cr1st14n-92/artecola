@@ -1,28 +1,9 @@
-.line__container {
-    display: flex;
-    flex-direction: row;
-    -ms-transform: skewY(20deg);
-    transform: skewY(-2.5deg);
-    margin-bottom: 0;
-}
 
-.red_line {
-    width: 30%;
-    margin-left: auto;
-    height: .2rem;
-    background-color: #C00D0D;
-}
 
-.grey_line {
-    width: 30%;
-    margin-right: auto;
-    height: .2rem;
-    background-color: #3C3C3B;
-}
 
 .footer__descargas {
     overflow-x: hidden;
-    margin-top: 4rem;
+    margin-top: -8rem;
     width: 100%;
     height: 400px;
     min-height: 400px;
@@ -35,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 27%, 100% 0, 100% 100%, 0 100%);
 }
 
 .footer_descargas-text {
@@ -77,10 +58,6 @@
 }
 
 @media only screen and (min-width:1440px) {
-    .line__container {
-        -ms-transform: skewY(15deg);
-        transform: skewY(-1.5deg);
-    }
     #footer_descargas-p1 {
         font-size: 2.4rem;
     }
@@ -89,12 +66,6 @@
     }
 }
 
-@media only screen and (max-width:1440px) {
-    .line__container {
-        -ms-transform: skewY(18deg);
-        transform: skewY(-1.8deg);
-    }
-}
 
 @media only screen and (max-width:1240px) {
     .footer__descargas {
@@ -102,18 +73,10 @@
     }
 }
 
-@media only screen and (max-width:1024px) {
-    .line__container {
-        -ms-transform: skewY(40deg);
-        transform: skewY(-4deg);
-    }
-}
+
 
 @media only screen and (max-width:768px) {
-    .line__container {
-        -ms-transform: skewY(42deg);
-        transform: skewY(-4.2deg);
-    }
+   
     #footer_descargas-p1 {
         width: 100%;
         display: inline-block;
@@ -132,10 +95,7 @@
 }
 
 @media only screen and (max-width:425px) {
-    .line__container {
-        -ms-transform: skewY(70deg);
-        transform: skewY(-7deg);
-    }
+   
     #footer_descargas-p1 {
         font-size: 1.5rem;
     }
@@ -144,12 +104,7 @@
     }
 }
 
-@media only screen and (max-width:320px) {
-    .line__container {
-        -ms-transform: skewY(88deg);
-        transform: skewY(-8.8deg);
-    }
-}
+
 
 /* FOOTER CONTACTENOS */
 

@@ -35,16 +35,10 @@
 
 html {
     font-size: 62.5%;
-    /* font family */
     font-family: "Open sans";
     font-weight: lighter;
-    /* background-color: tomato; */
 }
 
-/* span {
-    font-family: 'Open sans lightitalic';
-    font-weight: bold !important;
-} */
 
 .container {
     width: 80%;
@@ -93,7 +87,8 @@ html {
 .font_italic {
     font-family: 'Open sans lightitalic';
 }
-.font_semi_bold_italic{
+
+.font_semi_bold_italic {
     font-family: "Open sans semibold italic";
 }
 
@@ -113,7 +108,7 @@ html {
     text-transform: uppercase;
     font-family: 'Open sans semibold';
     color: white;
-    display: block;
+    display: inline-block;
     padding: 1.5rem 3rem;
     max-width: 60%;
     text-align: center;
@@ -125,6 +120,21 @@ html {
 
 .btn-grey {
     background-color: #3C3C3B;
+}
+
+.btn-white {
+    color: black;
+    background-color: white;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: 3px solid black;
+}
+
+.btn-white:hover {
+    background-color: #C00D0D;
+    color: #fff;
+    border: 3px solid #C00D0D;
+    transition: .2s;
 }
 
 .t4 {

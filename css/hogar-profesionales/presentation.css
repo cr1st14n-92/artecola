@@ -1,0 +1,12 @@
+.presentation__text {
+    width: 60.2%;
+    margin: 4rem auto;
+}
+
+.presentation__text__paragraph {
+    color: black;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 87rem;
+}
