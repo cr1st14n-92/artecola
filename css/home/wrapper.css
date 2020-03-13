@@ -1,10 +1,13 @@
 .background {
-    background-image: url('../../avatar/imagenes/fondo_Mesa\ de\ trabajo\ 1\ copia.png');
+    background-image: url('../../avatar/imagenes/fondo_Mesa de trabajo 1 copia.png');
     background-size: cover;
     z-index: 0;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0%, 100% 98.6%, 0% 100%);
+
+
 }
 
 .intro {
