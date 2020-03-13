@@ -64,6 +64,24 @@ html {
     flex-direction: row-reverse;
 }
 
+/* .red_box {
+    background-color: #C00D0D;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 7%;
+    bottom: 65%;
+}
+
+.grey_box {
+    width: 40%;
+    height: 40%;
+    background-color: #3C3C3B;
+    position: absolute;
+    right: 7%;
+    top: 65%;
+} */
+
 .column_reverse {
     flex-direction: column-reverse;
 }
@@ -74,6 +92,20 @@ html {
 
 .font_italic {
     font-family: 'Open sans lightitalic';
+}
+.font_semi_bold_italic{
+    font-family: "Open sans semibold italic";
+}
+
+.title {
+    font-size: 5.0rem;
+    color: white;
+    /* font-family: "Open sans bold"; */
+}
+
+.title_description {
+    font-size: 2.5rem;
+    color: white;
 }
 
 .btn {
@@ -99,11 +131,12 @@ html {
     font-size: 1.6rem;
     color: white;
     text-transform: uppercase;
-    font-family:"Open sans semibold" ;
+    font-family: "Open sans semibold";
     display: inline-block;
     margin-bottom: 1.8rem;
 }
-.t5{
+
+.t5 {
     font-size: 1.4rem;
     color: white;
     font-family: "Open sans semibold";
