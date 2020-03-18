@@ -53,6 +53,52 @@ html {
     height: 3rem;
     width: 3rem;
 }
+/* ICONOS HOGAR-PROFESIONALES*/
+.ball{
+    background-color: transparent;
+    -webkit-mask:url('../../avatar/icons/bola-llena.svg') no-repeat center;
+    mask: url('../../avatar/icons/bola-llena.svg') no-repeat center;
+    height: 2rem;
+    width: 2rem;
+    margin-top: -.3rem;
+}
+.ball__null{
+    background-color: transparent;
+    -webkit-mask:url('../../avatar/icons/bola-vacia.svg') no-repeat center;
+    mask: url('../../avatar/icons/bola-vacia.svg') no-repeat center;
+    padding: 0;
+    height: 2rem;
+    width: 2rem;
+}
+.description_slider1{
+    background-color: transparent;
+    -webkit-mask:url('../../avatar/icons/hogar-profesionales/iconSlider1.svg') no-repeat center;
+    mask: url('../../avatar/icons/hogar-profesionales/iconSlider1.svg') no-repeat center;
+    height: 100%;
+    width: 90%;
+}
+.description_slider2{
+    background-color: transparent;
+    -webkit-mask:url('../../avatar/icons/hogar-profesionales/iconSlider2.svg') no-repeat center;
+    mask: url('../../avatar/icons/hogar-profesionales/iconSlider2.svg') no-repeat center;
+    height: 100%;
+    width: 90%;
+}
+.description_slider3-1{
+    background-color: transparent;
+    -webkit-mask:url('../../avatar/icons/hogar-profesionales/iconSlider3-1.svg') no-repeat center;
+    mask: url('../../avatar/icons/hogar-profesionales/iconSlider3-1.svg') no-repeat center;
+    height: 100%;
+    width: 90%;
+}
+.description_slider3-2{
+    background-color: transparent;
+    -webkit-mask:url('../../avatar/icons/hogar-profesionales/iconSlider3-2.svg') no-repeat center;
+    mask: url('../../avatar/icons/hogar-profesionales/iconSlider3-2.svg') no-repeat center;
+    height: 100%;
+    width: 90%;
+}
+
 
 .row_reverse {
     flex-direction: row-reverse;

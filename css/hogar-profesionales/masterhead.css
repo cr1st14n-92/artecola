@@ -1,5 +1,5 @@
 .masterhead {
-    width: 100vw;
+    width: 100%;
     height: 89vh;
     background-image: url('../../avatar/imagenes/hogar-profesionales/bg_masterhead.png');
     background-size: cover;
@@ -11,9 +11,10 @@
 }
 
 .masterhead__container {
-    width: 50%;
+    width: 42%;
     display: flex;
     justify-content: space-around;
+    /* overflow-x: hidden; */
 }
 
 .masterhead__container__description {
@@ -37,6 +38,7 @@
     height: 100%;
     /* width: 50%; */
     object-fit: contain;
+    overflow-x: hidden;
 }
 
 @media only screen and (max-width:900px) {

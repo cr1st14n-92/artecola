@@ -146,7 +146,6 @@ function slider(){
         btn_right.click();
     }, 2900);
 
-
     btn_right.addEventListener("click",()=>{
         content_slide.style.transition="all .5s ease"
         content_slide.style.marginLeft="-200%";
