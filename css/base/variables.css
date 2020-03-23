@@ -54,6 +54,13 @@ html {
     width: 3rem;
 }
 /* ICONOS HOGAR-PROFESIONALES*/
+.right-arrow{
+    background-color: black;
+    -webkit-mask:url('../../avatar/icons/right_arrow.svg') no-repeat center;
+    mask: url('../../avatar/icons/right_arrow.svg') no-repeat center;
+    height: 1rem;
+    width: 1rem;
+}
 .ball{
     background-color: transparent;
     -webkit-mask:url('../../avatar/icons/bola-llena.svg') no-repeat center;
@@ -182,7 +189,18 @@ html {
     border: 3px solid #C00D0D;
     transition: .2s;
 }
+.t3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
 
+}
+.text{
+    font-size: 1.5rem ;
+    color: white;
+    line-height: 2.5rem;
+    
+}
 .t4 {
     font-size: 1.6rem;
     color: white;
