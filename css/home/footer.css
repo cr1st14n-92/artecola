@@ -94,6 +94,12 @@
   .btn_download {
     font-size: 1.2rem;
   }
+  .footer__container__logo{
+    height: 4rem;
+  }
+  .footer__container-logo{
+    height: 100%;
+  }
 }
 
 /* FOOTER CONTACTENOS */
