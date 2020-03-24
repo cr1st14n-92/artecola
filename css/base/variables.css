@@ -53,7 +53,7 @@ html {
     height: 3rem;
     width: 3rem;
 }
-/* ICONOS HOGAR-PROFESIONALES*/
+
 .right-arrow{
     background-color: black;
     -webkit-mask:url('../../avatar/icons/right_arrow.svg') no-repeat center;
@@ -61,6 +61,15 @@ html {
     height: 1rem;
     width: 1rem;
 }
+.left-arrow{
+    background-color: black;
+    -webkit-mask:url('../../avatar/icons/left_arrow.svg') no-repeat center;
+    mask: url('../../avatar/icons/left_arrow.svg') no-repeat center;
+    height: 1rem;
+    width: 1rem;
+}
+
+/* ICONOS HOGAR-PROFESIONALES*/
 .ball{
     background-color: transparent;
     -webkit-mask:url('../../avatar/icons/bola-llena.svg') no-repeat center;
@@ -111,28 +120,13 @@ html {
     flex-direction: row-reverse;
 }
 
-/* .red_box {
-    background-color: #C00D0D;
-    width: 40%;
-    height: 40%;
-    position: absolute;
-    left: 7%;
-    bottom: 65%;
-}
-
-.grey_box {
-    width: 40%;
-    height: 40%;
-    background-color: #3C3C3B;
-    position: absolute;
-    right: 7%;
-    top: 65%;
-} */
 
 .column_reverse {
     flex-direction: column-reverse;
 }
-
+.font_extrabold{
+    font-family: 'Open sans extrabold';
+}
 .font_bold {
     font-family: 'Open sans semibold';
 }
