@@ -175,7 +175,7 @@ footer {
 
 .footer__container__details__box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer__container__details__box__item:first-of-type {
@@ -232,9 +232,6 @@ footer {
   }
   .footer__container__details__contactUs__box {
     width: 100%;
-  }
-  .footer__container__details__contactUs__box:first-of-type {
-    /* padding-right:-100px; */
   }
   .footer__container__details__box {
     width: 100%;
@@ -298,5 +295,29 @@ footer {
   }
   .footer__mapa {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer__container__details__contactUs__box__item,
+  .footer__container__details__box__item{
+    width: auto;
+    max-width: 50%;
+  }
+  .footer__container__details__contactUs__box__item-description{
+    font-size: 1rem;
+    line-height: normal;
+  }
+  .footer__container__details__contactUs__box__item-title{
+    font-size: 1.2rem;
+  }
+  .footer__container__details__contactUs-title,
+  .footer__container__details__box__item-title{
+    font-size: 1.5rem ;
+  }
+  .footer__container__details__box__item:last-of-type,
+  .footer__container__details__contactUs__box__item:last-of-type{
+    margin-left: 10%;
+    margin-right: auto;
   }
 }
