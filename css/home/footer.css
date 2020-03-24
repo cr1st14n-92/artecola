@@ -106,12 +106,16 @@ footer {
   display: flex;
   padding: 5rem 0;
 }
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 .d-flex {
   display: flex;
 }
 .footer__container__logo {
   width: 40%;
-  margin-left: 2rem;
   margin-top: 5rem;
   display: flex;
   justify-content: end;
@@ -120,6 +124,7 @@ footer {
 
 .footer__container-logo {
   margin-left: auto;
+  width: 60%;
   height: 6rem;
   margin-right: auto;
 }
@@ -128,7 +133,7 @@ footer {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -175,15 +180,23 @@ footer {
   flex-direction: column;
   align-self: flex-start;
 }
+.footer__container__details__contactUs__box__item-title,
+.footer__container__details__contactUs__box__item-description {
+  margin-top: 0.5rem;
+  word-wrap: break-word;
+  height: auto;
+}
 
 .footer__mapa {
   margin-top: 4rem;
   width: 100%;
   height: 25rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer__mapa iframe {
-  width: 100%;
+  width: 60%;
   height: 100%;
   object-fit: contain;
 }
@@ -214,21 +227,36 @@ footer {
   .footer__container__details__contactUs__box {
     width: 100%;
   }
-  .footer__container__details__contactUs__box:first-of-type{
+  .footer__container__details__contactUs__box:first-of-type {
     /* padding-right:-100px; */
   }
   .footer__container__details__box {
     width: 100%;
   }
+  .footer__container__details__box__item {
+    margin-top: 2rem;
+  }
   .footer__container__details__box__item:first-of-type {
     width: 50%;
     margin-right: 0px;
   }
-  .footer__container__details__box__item:last-of-type{
-      margin-left: .3rem;
+  .footer__container__details__box__item:last-of-type {
+    margin-left: 0.3rem;
   }
   .menu {
     border-right: 1px solid white;
+  }
+  .footer__mapa {
+    margin-top: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer__mapa {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .footer__mapa iframe {
+    width: 90%;
   }
 }
 
@@ -243,16 +271,24 @@ footer {
     width: 100%;
     margin-left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .footer__container-logo {
-    margin-left: auto;
-    margin-right: auto;
+    margin-right:0;
+    margin-left:0 ;
   }
 
   .footer__container__details {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     margin-top: 3rem;
+  }
+  .footer__container__details__contactUs__box,
+  .footer__container__details__box {
+    justify-content: space-between;
+  }
+  .footer__container__details__box__item {
+    width: 50%;
   }
   .footer__mapa {
     width: 100%;
