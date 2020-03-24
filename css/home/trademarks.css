@@ -1,123 +1,116 @@
 .trademarks {
-    overflow: hidden;
-    -ms-transform: skewY(-25deg);
-    transform: skewY(-2.5deg);
-    width: 100%;
-    padding-top: 9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 6rem;
-    background-color: white;
-    /* z-index: 5; */
-    position: relative;
+  overflow: hidden;
+  -ms-transform: skewY(-25deg);
+  transform: skewY(-2.5deg);
+  width: 100%;
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 6rem;
+  background-color: white;
+  /* z-index: 5; */
+  position: relative;
 }
 
 .trademarks__title {
-    width: 30%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 8rem;
-    -ms-transform: skewY(25deg);
-    transform: skewY(2.5deg);
+  width: 30%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8rem;
+  -ms-transform: skewY(25deg);
+  transform: skewY(2.5deg);
 }
 
 .trademarks__row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10rem;
-    /* margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10rem;
+  /* margin-right: auto;
     margin-left: auto; */
-    -ms-transform: skewY(25deg);
-    transform: skewY(2.5deg);
-    margin-bottom: 8rem;
+  -ms-transform: skewY(25deg);
+  transform: skewY(2.5deg);
+  margin-bottom: 8rem;
 }
 
 .trademarks__row__item {
-    margin: 0 2%;
-    /* height: 8rem; */
-    height: 8rem;
-    min-height: 8rem;
-    max-height: 10rem;
-    width: 20%;
+  margin: 0 2%;
+  /* height: 8rem; */
+  height: 8rem;
+  min-height: 8rem;
+  max-height: 10rem;
+  width: 20%;
 }
 
 .line__container {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 0;
+  -ms-transform: skewY(15deg);
+  transform: skewY(-0.3deg);
+  padding-bottom: 3rem;
 }
 
 .red_line {
-    width: 30%;
-    margin-left: auto;
-    height: .2rem;
-    background-color: #C00D0D;
+  width: 30%;
+  margin-left: auto;
+  height: 0.2rem;
+  background-color: #c00d0d;
 }
 
 .grey_line {
-    width: 30%;
-    margin-right: auto;
-    height: .2rem;
-    background-color: #3C3C3B;
+  width: 30%;
+  margin-right: auto;
+  height: 0.2rem;
+  background-color: #3c3c3b;
 }
 
-@media only screen and (min-width:1440px) {
-    .line__container {
-        -ms-transform: skewY(15deg);
-        transform: skewY(-.3deg);
-        padding-bottom: 3rem;
-    }
+@media only screen and (max-width: 1440px) {
+  .line__container {
+    -ms-transform: skewY(18deg);
+    transform: skewY(-1.8deg);
+  }
 }
 
-@media only screen and (max-width:1440px) {
-    .line__container {
-        -ms-transform: skewY(18deg);
-        transform: skewY(-1.8deg);
-    }
-}
-
-@media only screen and (max-width:1024px) {
-    .line__container {
-        -ms-transform: skewY(40deg);
-        transform: skewY(-3.6deg);
-    }
-.trademarks__row {
-
+@media only screen and (max-width: 1024px) {
+  .line__container {
+    -ms-transform: skewY(40deg);
+    transform: skewY(-3.6deg);
+  }
+  .trademarks__row {
     margin-left: 2rem;
-}
-    
-}
-
-@media only screen and (max-width:768px) {
-    .line__container {
-        -ms-transform: skewY(42deg);
-        transform: skewY(-5deg);
-    }
-    .trademarks__row {
-        justify-content: space-around;
-    }
-    .trademarks__row__item {
-        width: 40%;
-        min-height: 2rem;
-        height: 7rem;
-        margin-bottom: 3rem;
-    }
+  }
 }
 
-@media only screen and (max-width:425px) {
-    .line__container {
-        -ms-transform: skewY(70deg);
-        transform: skewY(-12deg);
-    }
+@media only screen and (max-width: 768px) {
+  .line__container {
+    -ms-transform: skewY(42deg);
+    transform: skewY(-5deg);
+  }
+  .trademarks__row {
+    justify-content: space-around;
+  }
+  .trademarks__row__item {
+    width: 40%;
+    min-height: 2rem;
+    height: 7rem;
+    margin-bottom: 3rem;
+  }
 }
-@media only screen and (max-width:320px) {
-    .line__container {
-        -ms-transform: skewY(88deg);
-        transform: skewY(-16deg);
-    }
+
+@media only screen and (max-width: 425px) {
+  .line__container {
+    -ms-transform: skewY(70deg);
+    transform: skewY(-12deg);
+  }
+}
+@media only screen and (max-width: 320px) {
+  .line__container {
+    -ms-transform: skewY(88deg);
+    transform: skewY(-16deg);
+  }
 }

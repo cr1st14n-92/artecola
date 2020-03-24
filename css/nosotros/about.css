@@ -100,6 +100,46 @@
   font-family: "Open sans lightitalic";
   font-size: 1.8rem;
 }
+
+
+.footer__contactus{
+  overflow-x: hidden;
+  margin-top: -8rem;
+  width: 100%;
+  /* padding-top:20rem ; */
+  height: 63.8rem;
+  min-height: 400px;
+  background-image: url("../../avatar/imagenes/home/workers-red.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__contactus__title{
+  text-align: center;
+}
+.footer__clip-path{
+  margin-top: -4rem;
+  clip-path: polygon(0 14.0%, 100% 0, 100% 100%, 0% 100%);
+
+}
+.t3{
+  text-transform: unset;
+}
+.btn_contact{
+  display: block;
+  margin-top:2rem ;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 2rem;
+  border: white 2px solid;
+}
+
 @media only screen and (max-width: 1240px) {
   .about_content__description {
     font-size: 1.5rem;
@@ -119,7 +159,7 @@
     font-size: 1.4rem;
     height: 42vh;
   }
-  .about_content__description p{
+  .about_content__description p {
   }
   .about_content__description p {
     margin: 0 3rem;
@@ -181,7 +221,7 @@
     height: 40vh;
   }
   .about_content__description p {
-    line-height:normal;
+    line-height: normal;
     font-size: 1.4rem;
     margin: auto;
   }
@@ -192,18 +232,18 @@
     font-size: 2.8rem;
   }
   .about__title span {
-      font-size: 3rem;
+    font-size: 3rem;
   }
   .right-arrow,
   .left-arrow {
     height: 1.5rem;
     width: 1.5rem;
-    margin:.5rem 1rem;
-}
+    margin: 0.5rem 1rem;
+  }
 }
 @media only screen and (max-width: 375px) {
   .about_content__description p {
     font-size: 1.2rem;
-    margin :0 .5rem;
+    margin: 0 0.5rem;
   }
 }
