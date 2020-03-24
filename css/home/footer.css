@@ -112,6 +112,13 @@ footer {
   display: flex;
   padding: 5rem 0;
 }
+.footer__clip-path{
+  margin-top: 2rem;
+  padding: 13rem 0;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+
+}
+
 .footer__container {
   display: flex;
   flex-wrap: wrap;
@@ -224,7 +231,7 @@ footer {
   background-color: #3c3c3b;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1076px) {
   .footer__container__details__contactUs {
     display: flex;
     flex-direction: column;
@@ -251,6 +258,11 @@ footer {
   }
   .footer__mapa {
     margin-top: 1.2rem;
+  }
+  .footer__clip-path{
+    margin-top: 6rem;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  
   }
 }
 @media only screen and (max-width: 768px) {
