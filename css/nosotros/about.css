@@ -35,17 +35,18 @@
 }
 .about_content__description {
   font-size: 1.8rem;
-  line-height: 2.5rem;
+  line-height: 2.4rem;
   display: flex;
+  /* padding: 1rem .5rem; */
   align-items: center;
   margin: auto;
   width: 48%;
-  height: 52vh;
+  height: 50vh;
   text-align: center;
   background: rgb(234, 234, 234);
 }
 .about_content__description p {
-  margin: 0 6rem;
+  margin: 2rem 3rem;
 }
 .about_content__description__img {
   height: 100%;
@@ -93,6 +94,7 @@
   width: 20%;
 }
 .about_us__estrategies__item__title {
+  text-transform: uppercase;
   font-size: 3.2rem;
   font-family: "Open sans extrabold";
 }
@@ -101,12 +103,10 @@
   font-size: 1.8rem;
 }
 
-
-.footer__contactus{
+.footer__contactus {
   overflow-x: hidden;
   margin-top: -8rem;
   width: 100%;
-  /* padding-top:20rem ; */
   height: 63.8rem;
   min-height: 400px;
   background-image: url("../../avatar/imagenes/home/workers-red.png");
@@ -120,20 +120,19 @@
   justify-content: center;
   align-items: center;
 }
-.footer__contactus__title{
-  text-align: center;
-}
-.footer__clip-path{
-  margin-top: -4rem;
-  clip-path: polygon(0 14.0%, 100% 0, 100% 100%, 0% 100%);
-
-}
-.t3{
+.footer__contactus__title__principal{
   text-transform: unset;
 }
-.btn_contact{
+.footer__contactus__title {
+  text-align: center;
+}
+.footer__clip-path {
+  margin-top: -4rem;
+  clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+}
+.btn_contact {
   display: block;
-  margin-top:2rem ;
+  margin-top: 2rem;
   padding: 1rem 2rem;
   color: white;
   font-size: 2rem;
@@ -144,24 +143,18 @@
   .about_content__description {
     font-size: 1.5rem;
   }
-  .about_content__description p {
-    line-height: normal;
-  }
 }
 @media only screen and (max-width: 1024px) {
   .about__title {
     font-size: 4rem;
+    /* margin-top: ; */
   }
   .about__title span {
     font-size: 5rem;
   }
   .about_content__description {
     font-size: 1.4rem;
-    height: 42vh;
-  }
-  .about_content__description p {
-    margin: 0 3rem;
-    line-height: 2.2rem;
+    /* height: 42vh; */
   }
   .about_us__estrategies__item {
     height: 36vh;
@@ -172,15 +165,16 @@
   }
   .about_us__estrategies__item__text {
     font-size: 1.4rem;
-    line-height: normal;
+    /* line-height: normal; */
   }
 }
 @media only screen and (max-width: 767px) {
   .about_content__description {
     width: 70%;
-    font-size: 1.5rem;
-    line-height: 2rem;
     margin-bottom: 2rem;
+  }
+  .about_content__description p {
+    font-size: 1.5rem;
   }
 
   .about_us__estrategies {
@@ -200,15 +194,25 @@
   }
 }
 @media only screen and (max-width: 648px) {
+  .about_content__description{
+    height: 48vh;
+  }
   .about_us__estrategies__item {
     width: 52%;
+  }
+  .about_content__description p {
+    font-size: 1.4rem;
+    line-height: normal;
   }
 }
 
 @media only screen and (max-width: 576px) {
+  .about_content__description{
+    height: 44vh;
+  }
   .about_content__description p {
-    font-size: 1.5rem;
-    line-height: 1.6rem;
+    font-size: 1.2rem;
+    line-height: normal;
   }
 }
 
@@ -216,12 +220,7 @@
   .about_content__description {
     font-size: 1rem;
     width: 90%;
-    height: 40vh;
-  }
-  .about_content__description p {
-    line-height: normal;
-    font-size: 1.4rem;
-    margin: auto;
+    /* height: 40vh; */
   }
   .about_us__estrategies__item {
     width: 80%;
@@ -240,8 +239,20 @@
   }
 }
 @media only screen and (max-width: 375px) {
+  .about_content__description{
+    height: 40vh;
+  }
   .about_content__description p {
     font-size: 1.2rem;
-    margin: 0 0.5rem;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .about_content__description{
+    height: 38vh;
+  }
+  .about_content__description p {
+    font-size: 1.1rem;
+    line-height: normal;
   }
 }

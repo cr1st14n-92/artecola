@@ -1,232 +1,249 @@
 @font-face {
-    font-family: "Open sans bold";
-    src: url("../fuentes/OpenSans-Bold.ttf")format('truetype');
+  font-family: "Open sans bold";
+  src: url("../fuentes/OpenSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Open sans extrabold";
-    src: url("../fuentes/OpenSans-ExtraBold.ttf")format('truetype');
+  font-family: "Open sans extrabold";
+  src: url("../fuentes/OpenSans-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Open sans extrabold italic";
-    src: url("../fuentes/OpenSans-ExtraBoldItalic.ttf")format('truetype');
+  font-family: "Open sans extrabold italic";
+  src: url("../fuentes/OpenSans-ExtraBoldItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Open sans lightitalic";
-    src: url("../fuentes/OpenSans-LightItalic.ttf")format('truetype');
+  font-family: "Open sans lightitalic";
+  src: url("../fuentes/OpenSans-LightItalic.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Open sans";
-    src: url("../fuentes/OpenSans-Regular.ttf")format('truetype');
+  font-family: "Open sans";
+  src: url("../fuentes/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Open sans semibold";
-    src: url("../fuentes/OpenSans-Semibold.ttf")format('truetype');
+  font-family: "Open sans semibold";
+  src: url("../fuentes/OpenSans-Semibold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Open sans semibold italic";
-    src: url("../fuentes/OpenSans-SemiboldItalic.ttf")format('truetype');
+  font-family: "Open sans semibold italic";
+  src: url("../fuentes/OpenSans-SemiboldItalic.ttf") format("truetype");
 }
 
 html {
-    font-size: 62.5%;
-    font-family: "Open sans";
-    font-weight: lighter;
+  font-size: 62.5%;
+  font-family: "Open sans";
+  font-weight: lighter;
 }
 
-
 .container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icon_arrow_down {
-    background-color: white;
-    -webkit-mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
-    mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
-    height: 3rem;
-    width: 3rem;
+  background-color: white;
+  -webkit-mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
+  mask: url("../../avatar/icons/arrow_down.svg") no-repeat center;
+  height: 3rem;
+  width: 3rem;
 }
 
-.right-arrow{
-    background-color: black;
-    -webkit-mask:url('../../avatar/icons/right_arrow.svg') no-repeat center;
-    mask: url('../../avatar/icons/right_arrow.svg') no-repeat center;
-    height: 1rem;
-    width: 1rem;
+.right-arrow {
+  background-color: black;
+  -webkit-mask: url("../../avatar/icons/right_arrow.svg") no-repeat center;
+  mask: url("../../avatar/icons/right_arrow.svg") no-repeat center;
+  height: 1rem;
+  width: 1rem;
 }
-.left-arrow{
-    background-color: black;
-    -webkit-mask:url('../../avatar/icons/left_arrow.svg') no-repeat center;
-    mask: url('../../avatar/icons/left_arrow.svg') no-repeat center;
-    height: 1rem;
-    width: 1rem;
+.left-arrow {
+  background-color: black;
+  -webkit-mask: url("../../avatar/icons/left_arrow.svg") no-repeat center;
+  mask: url("../../avatar/icons/left_arrow.svg") no-repeat center;
+  height: 1rem;
+  width: 1rem;
 }
 
 /* ICONOS HOGAR-PROFESIONALES*/
-.ball{
-    background-color: transparent;
-    -webkit-mask:url('../../avatar/icons/bola-llena.svg') no-repeat center;
-    mask: url('../../avatar/icons/bola-llena.svg') no-repeat center;
-    height: 2rem;
-    width: 2rem;
-    margin-top: -.3rem;
+.ball {
+  background-color: transparent;
+  -webkit-mask: url("../../avatar/icons/bola-llena.svg") no-repeat center;
+  mask: url("../../avatar/icons/bola-llena.svg") no-repeat center;
+  height: 2rem;
+  width: 2rem;
+  margin-top: -0.3rem;
 }
-.ball__null{
-    background-color: transparent;
-    -webkit-mask:url('../../avatar/icons/bola-vacia.svg') no-repeat center;
-    mask: url('../../avatar/icons/bola-vacia.svg') no-repeat center;
-    padding: 0;
-    height: 2rem;
-    width: 2rem;
+.ball__null {
+  background-color: transparent;
+  -webkit-mask: url("../../avatar/icons/bola-vacia.svg") no-repeat center;
+  mask: url("../../avatar/icons/bola-vacia.svg") no-repeat center;
+  padding: 0;
+  height: 2rem;
+  width: 2rem;
 }
-.description_slider1{
-    background-color: transparent;
-    -webkit-mask:url('../../avatar/icons/hogar-profesionales/iconSlider1.svg') no-repeat center;
-    mask: url('../../avatar/icons/hogar-profesionales/iconSlider1.svg') no-repeat center;
-    height: 100%;
-    width: 90%;
+.description_slider1 {
+  background-color: transparent;
+  -webkit-mask: url("../../avatar/icons/hogar-profesionales/iconSlider1.svg")
+    no-repeat center;
+  mask: url("../../avatar/icons/hogar-profesionales/iconSlider1.svg") no-repeat
+    center;
+  height: 100%;
+  width: 90%;
 }
-.description_slider2{
-    background-color: transparent;
-    -webkit-mask:url('../../avatar/icons/hogar-profesionales/iconSlider2.svg') no-repeat center;
-    mask: url('../../avatar/icons/hogar-profesionales/iconSlider2.svg') no-repeat center;
-    height: 100%;
-    width: 90%;
+.description_slider2 {
+  background-color: transparent;
+  -webkit-mask: url("../../avatar/icons/hogar-profesionales/iconSlider2.svg")
+    no-repeat center;
+  mask: url("../../avatar/icons/hogar-profesionales/iconSlider2.svg") no-repeat
+    center;
+  height: 100%;
+  width: 90%;
 }
-.description_slider3-1{
-    background-color: transparent;
-    -webkit-mask:url('../../avatar/icons/hogar-profesionales/iconSlider3-1.svg') no-repeat center;
-    mask: url('../../avatar/icons/hogar-profesionales/iconSlider3-1.svg') no-repeat center;
-    height: 100%;
-    width: 90%;
+.description_slider3-1 {
+  background-color: transparent;
+  -webkit-mask: url("../../avatar/icons/hogar-profesionales/iconSlider3-1.svg")
+    no-repeat center;
+  mask: url("../../avatar/icons/hogar-profesionales/iconSlider3-1.svg")
+    no-repeat center;
+  height: 100%;
+  width: 90%;
 }
-.description_slider3-2{
-    background-color: transparent;
-    -webkit-mask:url('../../avatar/icons/hogar-profesionales/iconSlider3-2.svg') no-repeat center;
-    mask: url('../../avatar/icons/hogar-profesionales/iconSlider3-2.svg') no-repeat center;
-    height: 100%;
-    width: 90%;
+.description_slider3-2 {
+  background-color: transparent;
+  -webkit-mask: url("../../avatar/icons/hogar-profesionales/iconSlider3-2.svg")
+    no-repeat center;
+  mask: url("../../avatar/icons/hogar-profesionales/iconSlider3-2.svg")
+    no-repeat center;
+  height: 100%;
+  width: 90%;
 }
-
 
 .row_reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 
 .column_reverse {
-    flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
-.font_extrabold{
-    font-family: 'Open sans extrabold';
+.font_extrabold {
+  font-family: "Open sans extrabold";
 }
 .font_bold {
-    font-family: 'Open sans semibold';
+  font-family: "Open sans semibold";
 }
 
 .font_italic {
-    font-family: 'Open sans lightitalic';
+  font-family: "Open sans lightitalic";
 }
 
 .font_semi_bold_italic {
-    font-family: "Open sans semibold italic";
+  font-family: "Open sans semibold italic";
 }
 
 .title {
-    font-size: 5.0rem;
-    color: white;
-    /* font-family: "Open sans bold"; */
+  font-size: 5rem;
+  color: white;
 }
 
+.big__title {
+  font-size: 7rem;
+}
+.text_center {
+  text-align: center;
+}
 .title_description {
-    font-size: 2.5rem;
-    color: white;
+  font-size: 2.5rem;
+  color: white;
 }
 
 .btn {
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-family: 'Open sans semibold';
-    color: white;
-    display: inline-block;
-    padding: 1.5rem 3rem;
-    max-width: 60%;
-    text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Open sans semibold";
+  color: white;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  max-width: 60%;
+  text-align: center;
 }
 
 .btn-red {
-    background-color: #C00D0D;
+  background-color: #c00d0d;
 }
 
 .btn-grey {
-    background-color: #3C3C3B;
+  background-color: #3c3c3b;
 }
 
 .btn-white {
-    color: black;
-    background-color: white;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    border: 3px solid black;
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: 3px solid black;
 }
 
 .btn-white:hover {
-    background-color: #C00D0D;
-    color: #fff;
-    border: 3px solid #C00D0D;
-    transition: .2s;
+  background-color: #c00d0d;
+  color: #fff;
+  border: 3px solid #c00d0d;
+  transition: 0.2s;
 }
-.t3{
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: white;
-
+.t3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
 }
-.text{
-    font-size: 1.5rem ;
-    color: white;
-    line-height: 2.5rem;
-    
+.text {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 2.5rem;
 }
 .t4 {
-    font-size: 1.6rem;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Open sans semibold";
-    display: inline-block;
-    margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open sans semibold";
+  display: inline-block;
+  margin-bottom: 1.8rem;
 }
 
 .t5 {
-    font-size: 1.4rem;
-    color: white;
-    font-family: "Open sans semibold";
-    display: inline-block;
-    margin-bottom: .5rem;
+  font-size: 1.4rem;
+  color: white;
+  font-family: "Open sans semibold";
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
-@media only screen and (max-width:1024px) {
-    .btn {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width:860px) {
-    .btn {
-        max-width: 70%;
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
-    }
+@media only screen and (max-width: 1024px) {
+  .btn {
+    font-size: 2rem;
+  }
+ 
 }
 
-@media only screen and (max-width:599px) {
-    .btn {
-        font-size: 1.3rem;
-    }
+@media only screen and (max-width: 860px) {
+  .btn {
+    max-width: 70%;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .btn {
+    font-size: 1.3rem;
+  }
+  .title_description {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .title_description {
+    font-size: 1.5rem;
+  }
 }

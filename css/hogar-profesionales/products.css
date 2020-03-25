@@ -1,28 +1,30 @@
-.products {
-}
 
 /* BOX  */
 
 .products__box {
   display: flex;
   justify-content: center;
-  margin: 5rem 0;
+  margin: 2.5rem auto;
   flex-wrap: wrap;
-  margin-bottom: 8rem;
+  width:75%;
+  margin-bottom: 2rem;
 }
 
 .products__box__item {
   margin: 0.5rem 2%;
+  text-align: center;
 }
 
 /* END BOX */
 
 /* CATEGORIES */
 
-.products__categories {
+.products__categories{
   display: flex;
+  width: 90%;
+
   justify-content: center;
-  margin: 4rem 0;
+  margin: 1rem auto;
   flex-wrap: wrap;
 }
 
@@ -30,7 +32,7 @@
   font-size: 1.5rem;
   display: inline-block;
   color: black;
-  padding: 1.2rem 1rem;
+  padding: 1.5rem 1rem;
   text-transform: uppercase;
   font-family: "Open sans semibold";
 }
@@ -232,6 +234,7 @@
     font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    
   }
 }
 
@@ -272,5 +275,14 @@
   .products__catalog__news__container__item {
     width: 52%;
     height: 49vh;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .products__box{
+    width: 60%;
+  }
+  .products__box__item{
+    width: 100%;
+    margin: 1rem auto;
   }
 }
